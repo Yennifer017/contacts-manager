@@ -1,0 +1,16 @@
+# ninja log v5
+10	252	1710983137499970722	CMakeFiles/contacts_manager.dir/Reguex.cpp.o	8888dc3ba9daa977
+10	295	1710983137539971068	CMakeFiles/contacts_manager.dir/Token.cpp.o	59b8e21c7424bde0
+9	442	1710983137687972348	CMakeFiles/contacts_manager.dir/main.cpp.o	367d27f77af5191e
+10	455	1710983137703972486	CMakeFiles/contacts_manager.dir/Lexer.cpp.o	6c670058ffcbf592
+455	829	1710983138075975705	contacts_manager	60fb4b1ab25755a1
+0	260	1710983166120222616	CMakeFiles/contacts_manager.dir/main.cpp.o	367d27f77af5191e
+260	307	1710983166164223010	contacts_manager	60fb4b1ab25755a1
+0	266	1710983182932374406	CMakeFiles/contacts_manager.dir/main.cpp.o	367d27f77af5191e
+266	314	1710983182980374843	contacts_manager	60fb4b1ab25755a1
+0	540	1710983375402306947	CMakeFiles/contacts_manager.dir/Lexer.cpp.o	6c670058ffcbf592
+540	673	1710983375534310668	contacts_manager	60fb4b1ab25755a1
+0	186	1710983677825731171	CMakeFiles/contacts_manager.dir/Token.cpp.o	59b8e21c7424bde0
+0	247	1710983677885732465	CMakeFiles/contacts_manager.dir/Lexer.cpp.o	6c670058ffcbf592
+0	275	1710983677913733068	CMakeFiles/contacts_manager.dir/main.cpp.o	367d27f77af5191e
+275	325	1710983677965734190	contacts_manager	60fb4b1ab25755a1
