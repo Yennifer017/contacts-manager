@@ -1,7 +1,7 @@
 //
 // Created by yennifer on 3/20/24.
 //
-
+#include <iostream>
 #include "Lexer.h"
 #include "TypeTkn.h"
 
@@ -15,7 +15,7 @@ LinkedList<Token> *Lexer::analizar(std::string *&texto) {
             analiceChar(texto);
         }else{
             char currentChar = texto->at(current);
-            reading+= currentChar;
+            reading->push_back(currentChar);
             if(currentChar == reading->at(0)){
                 readAll = false;
                 saveString();
@@ -43,7 +43,7 @@ void Lexer::analiceChar(std::string* &text) {
     }else if (reguex->isReservedCharacter(character)){
         analizarSymbols(text);
     }else if(character == '"' || character == '\''){
-        reading+= character;
+        reading->push_back(character);
         readAll = true;
         current++;
     }else if(!reguex->isIgnoredCharacter(character)){
@@ -56,30 +56,24 @@ void Lexer::analiceChar(std::string* &text) {
 
 void Lexer::analizarIds(std::string* &text) {
     while(current < text->length() && reguex->isAlphanumeric(text->at(current))){
-        reading += text->at(current);
+        reading->push_back(text->at(current));
         current++;
     }
-    Token* token = new Token(reading, getTypeId(reading));
-    tokens->insertLast(token);
-    reading = new std::string();
+    saveToken(getTypeId(reading));
 }
 
 void Lexer::analizarNumbers(std::string *&text) {
     while(current < text->length() && reguex->isNumber(text->at(current))){
-        reading += text->at(current);
+        reading->push_back(text->at(current));
         current++;
     }
-    Token* token = new Token(reading, static_cast<int>(TypeTkn::ENTERO));
-    tokens->insertLast(token);
-    reading = new std::string();
+    saveToken(static_cast<int>(TypeTkn::ENTERO));
 }
 
 void Lexer::analizarSymbols(std::string *&text) {
     char currentChar = text->at(current);
-    reading += currentChar;
-    Token* token = new Token(reading, getTypeSymbol(currentChar));
-    tokens->insertLast(token);
-    reading = new std::string();
+    reading->push_back(currentChar);
+    saveToken(getTypeSymbol(currentChar));
     current++;
 }
 
@@ -135,9 +129,7 @@ void Lexer::saveString() {
         std::string s = *reading;
         saveError(s);
     }else {
-        Token* token = new Token(reading, getTypeCadena(reading->at(0)));
-        tokens->insertLast(token);
-        reading = new std::string();
+        saveToken(getTypeCadena(reading->at(0)));
     }
 }
 
@@ -157,6 +149,12 @@ int Lexer::getTypeCadena(char symbol) {
         default:
             return -1;
     }
+}
+
+void Lexer::saveToken(int type) {
+    Token* token = new Token(reading, type);
+    tokens->insertLast(token);
+    reading = new std::string ();
 }
 
 

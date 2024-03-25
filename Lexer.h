@@ -28,6 +28,8 @@ private:
     int getTypeSymbol(char symbol);
     int getTypeCadena(char symbol);
 
+    void saveToken(int type);
+
 
 public:
     Lexer();

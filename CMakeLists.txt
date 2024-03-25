@@ -13,4 +13,9 @@ add_executable(contacts_manager main.cpp
         LinkedList.h
         Node.h
         TypeTkn.h
+        Util.cpp
+        Util.h
+        HashTable.h
+        HashContainer.h
+        HashMap.h
 )
