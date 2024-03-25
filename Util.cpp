@@ -4,9 +4,13 @@
 
 #include "Util.h"
 #include <iostream>
+#include <limits>
 
 std::string *Util::getLectura() {
     std::string lectura;
+    printGetter();
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Limpiar el buffer de entrada
     std::cin >> lectura;
     return new std::string(lectura);
 }
@@ -14,6 +18,9 @@ std::string *Util::getLectura() {
 void Util::enterContinue() {
     std::cout<<"Ingrese cualquier letra/numero para continuar\n";
     std::string lectura;
+    // Limpiar el buffer de entrada
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Limpiar el buffer de entrada
     std::cin >> lectura;
     lectura.clear();
 }
@@ -31,7 +38,7 @@ int Util::getNumber() {
     do{
         try {
             std::string lectura;
-            std::cout<<"      >>";
+            printGetter();
             std::cin >> lectura;
             int number = std::stoi(lectura);
             return number;
@@ -61,4 +68,8 @@ int Util::getNaturalNumber(int min, int max) {
 
 void Util::printSeparator() {
     std::cout<<"-----------------------------------------------------------------------------------"<<std::endl;
+}
+
+void Util::printGetter() {
+    std::cout<<"      >>";
 }

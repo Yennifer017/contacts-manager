@@ -15,7 +15,13 @@ add_executable(contacts_manager main.cpp
         TypeTkn.h
         Util.cpp
         Util.h
-        HashTable.h
         HashContainer.h
         HashMap.h
+        TreeNode.h
+        AVLtree.h
+        Exporter.cpp
+        Exporter.h
+        Manager.cpp
+        Manager.h
+        TreeGraficator.h
 )

@@ -7,6 +7,8 @@
 #include <string>
 
 class Util {
+private:
+    void printGetter();
 public:
     std::string* getLectura();
     void enterContinue();
