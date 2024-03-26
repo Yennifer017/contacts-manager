@@ -17,7 +17,7 @@ private:
         bool inserted = false;
         do {
             int comparation = newNode->getKey()->compare(*auxiliar->getKey());
-            if(comparation <= 0){//lado izquierdo
+            if(comparation < 0){//lado izquierdo
                 if(auxiliar->getLeft() == nullptr){
                     newNode->setFather(auxiliar);
                     auxiliar->setLeft(newNode);
@@ -37,11 +37,85 @@ private:
         } while (!inserted);
     }
 
+    void rotateRightRight(TreeNode<T>* &current){ //cuando ambos estan en la izquierda
+        TreeNode<T>* newCurrent = current->getLeft();
+        if(current->getFather() != nullptr){
+            fixFatherReferences(current, newCurrent);
+        }else{
+            raiz = newCurrent;
+            current->setFather(newCurrent);
+            newCurrent->emptyFatherReference();
+        }
+        newCurrent->setRight(current);
+        current->emptyLeftReference();
+        current->adjustWeight();
+    }
+
+    void rotateRightLeft(TreeNode<T>* &current){
+        TreeNode<T>* middle = current->getRight();
+        TreeNode<T>* last = middle->getLeft();
+        middle->setFather(last);
+        middle->emptyLeftReference();
+        last->setFather(current);
+        last->setRight(middle);
+        current->setRight(last);
+        rotateLeftLeft(current);
+    }
+
+    void rotateLeftRight(TreeNode<T>* &current){
+        TreeNode<T>* middle = current->getLeft();
+        TreeNode<T>* last = middle->getRight();
+        middle->setFather(last);
+        middle->emptyRightReference();
+        last->setFather(current);
+        last->setLeft(middle);
+        current->setLeft(last);
+        rotateRightRight(current);
+    }
+
+    void rotateLeftLeft(TreeNode<T>* &current){ //cuando estan ambos a la derecha
+        TreeNode<T>* newCurrent = current->getRight();
+        if(current->getFather() != nullptr){
+            fixFatherReferences(current, newCurrent);
+        }else{
+            raiz = newCurrent;
+            current->setFather(newCurrent);
+            newCurrent->emptyFatherReference();
+        }
+        newCurrent->setLeft(current);
+        current->emptyRightReference();
+        current->adjustWeight();
+    }
+
+    void fixFatherReferences(TreeNode<T>* &current,TreeNode<T>* &newCurrent){
+        TreeNode<T>* father = current->getFather();
+        bool wasRightFromFather = father->getRight() == current;
+        current->setFather(newCurrent);
+        newCurrent->setFather(father);
+        if(wasRightFromFather){
+            father->setRight(newCurrent);
+        }else{
+            father->setLeft(newCurrent);
+        }
+        father->adjustWeight();
+    }
+
     void balance(TreeNode<T>* &recentInserted){
         TreeNode<T>* currentNode = recentInserted;
         while (currentNode != nullptr){ //hasta llegar a la raiz
+            currentNode->adjustWeight();
             if(!currentNode->isBalanced()){
-                printf("Se encontro un nodo que no esta balanceado :c");
+                if(currentNode->getRight() != nullptr && currentNode->getRight()->getRight() != nullptr){
+                    rotateLeftLeft(currentNode);
+                }else if(currentNode->getLeft() != nullptr && currentNode->getLeft()->getLeft() != nullptr){
+                    rotateRightRight(currentNode);
+                }else if(currentNode->getLeft() != nullptr && currentNode->getLeft()->getRight() != nullptr){
+                    rotateLeftRight(currentNode);
+                }else if(currentNode->getRight() != nullptr && currentNode->getRight()->getLeft() != nullptr){
+                    rotateRightLeft(currentNode);
+                }else{
+                    std::cout<<"No se pudo balancear el arbol ERROR fatal";
+                }
             }
             currentNode = currentNode->getFather();
         }
@@ -63,7 +137,7 @@ public:
             raiz = newNode;
         }else{
             internalInsertion(newNode);
-            this->balance(newNode);
+            balance(newNode);
         }
         totalElements ++;
     }

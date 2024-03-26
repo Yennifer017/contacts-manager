@@ -40,13 +40,12 @@ int main() {
     manager->showMenu();*/
 
 
-
-
     AVLtree< Node<std::string> >* tree = new AVLtree< Node<std::string> >();
-    std::string* code1 = new std::string("moltes");
-    std::string* code2 = new std::string("articuno");
-    std::string* code3 = new std::string("zapdos");
-    std::string* code4 = new std::string("dedalo");
+    std::string* code1 = new std::string("1");
+    std::string* code2 = new std::string("1");
+    std::string* code3 = new std::string("1");
+    std::string* code4 = new std::string("1");
+    std::string* code5 = new std::string("1");
     Node<std::string>* node1 = new Node<std::string>(new std::string("hola"));
     Node<std::string>* node2 = new Node<std::string>(new std::string("adios"));
     Node<std::string>* node3 = new Node<std::string>(new std::string("bye"));
@@ -56,6 +55,7 @@ int main() {
     tree->insert(code2, node2);
     tree->insert(code3, node3);
     tree->insert(code4, node4);
+    tree->insert(code5, node4);
 
     TreeGraficator<Node<std::string>>* graph = new TreeGraficator<Node<std::string>> ();
     graph->setNameTree(new std::string("arbol1"));

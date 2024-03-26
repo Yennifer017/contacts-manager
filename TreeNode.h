@@ -41,6 +41,13 @@ public:
         return diference == 0 || diference == 1 || diference == -1;
     }
 
+    void adjustWeight(){
+        int rightWeight = right == nullptr ? 0 : right->weight;
+        int leftWight = left == nullptr ? 0 : left->weight;
+        int mayor =  rightWeight > leftWight?  rightWeight : leftWight;
+        this->weight = 1+mayor;
+    }
+
     /*GETTERS*/
     TreeNode* getRight(){
         return this->right;
@@ -67,6 +74,15 @@ public:
     }
     void setLeft(TreeNode* &_left){
         this->left = _left;
+    }
+    void emptyRightReference(){
+        this->right = nullptr;
+    }
+    void emptyLeftReference(){
+        this->left = nullptr;
+    }
+    void emptyFatherReference(){
+        this->father = nullptr;
     }
 };
 
