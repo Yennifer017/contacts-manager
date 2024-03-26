@@ -41,16 +41,24 @@ int main() {
     exporter->createDoc(new std::string("contenido"), new std::string("miArchivo"), Exporter::CURRENT_FOLDER, Exporter::TXT_EXTENSION);
     */
 
-    Manager* manager = new Manager();
-    manager->showMenu();
+    /*Manager* manager = new Manager();
+    manager->showMenu();*/
 
 
-    /*AVLtree< Node<std::string> >* tree = new AVLtree< Node<std::string> >();
-    std::string* code1 = new std::string("1");
-    std::string* code2 = new std::string("1");
-    std::string* code3 = new std::string("1");
-    std::string* code4 = new std::string("1");
-    std::string* code5 = new std::string("1");
+    AVLtree< Node<std::string> >* tree = new AVLtree< Node<std::string> >();
+    std::string* code1 = new std::string("w");
+    std::string* code2 = new std::string("m");
+    std::string* code3 = new std::string("v");
+    std::string* code4 = new std::string("y");
+    std::string* code5 = new std::string("e");
+    std::string* code6 = new std::string("h");
+    std::string* code7 = new std::string("b");
+    std::string* code8 = new std::string("z");
+    std::string* code9 = new std::string("r");
+    std::string* code10 = new std::string("s");
+    std::string* code11 = new std::string("l");
+    std::string* code12 = new std::string("j");
+
     Node<std::string>* node1 = new Node<std::string>(new std::string("hola"));
     Node<std::string>* node2 = new Node<std::string>(new std::string("adios"));
     Node<std::string>* node3 = new Node<std::string>(new std::string("bye"));
@@ -61,10 +69,17 @@ int main() {
     tree->insert(code3, node3);
     tree->insert(code4, node4);
     tree->insert(code5, node4);
+    tree->insert(code6, node4);
+    tree->insert(code7, node4);
+    tree->insert(code8, node4);
+    tree->insert(code9, node4);
+    tree->insert(code10, node4);
+    tree->insert(code11, node4);
+    tree->insert(code12, node4);
 
     TreeGraficator<Node<std::string>>* graph = new TreeGraficator<Node<std::string>> ();
     graph->setNameTree(new std::string("arbol1"));
-    graph->graficateTree(tree, "grafico");*/
+    graph->graficateTree(tree, "grafico");
 
 
 

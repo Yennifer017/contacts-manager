@@ -40,6 +40,13 @@ public:
         int diference = this->getInclinationWeight();
         return diference == 0 || diference == 1 || diference == -1;
     }
+    bool isRightFromFather(){
+        if(father != nullptr){
+            return father->getRight() == this;
+        }else{
+            return false;
+        }
+    }
 
     void adjustWeight(){
         int rightWeight = right == nullptr ? 0 : right->weight;

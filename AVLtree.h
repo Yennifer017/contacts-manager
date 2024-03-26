@@ -11,6 +11,9 @@ class AVLtree {
 private:
     TreeNode<T>* raiz;
     int totalElements;
+    const int NOTHING = 0;
+    const int RIGHT = 1;
+    const int LEFT = -1;
 
     void internalInsertion(TreeNode<T>* &newNode){
         TreeNode<T>* auxiliar = raiz;
@@ -46,9 +49,16 @@ private:
             current->setFather(newCurrent);
             newCurrent->emptyFatherReference();
         }
+        TreeNode<T>* rightToNewCurrent = newCurrent->getRight();
         newCurrent->setRight(current);
         current->emptyLeftReference();
+        if(rightToNewCurrent != nullptr){
+            current->setLeft(rightToNewCurrent);
+            rightToNewCurrent->setFather(current);
+            rightToNewCurrent->adjustWeight();
+        }
         current->adjustWeight();
+        current = newCurrent; //TODO: REVISAR QUE ESTE BIEN
     }
 
     void rotateRightLeft(TreeNode<T>* &current){
@@ -57,8 +67,15 @@ private:
         middle->setFather(last);
         middle->emptyLeftReference();
         last->setFather(current);
+        if(last->getRight() != nullptr){
+            TreeNode<T>* originalRightLast = last->getRight();
+            middle->setLeft(originalRightLast);
+            originalRightLast->setFather(middle);
+        }
         last->setRight(middle);
         current->setRight(last);
+        middle->adjustWeight();
+        last->adjustWeight();
         rotateLeftLeft(current);
     }
 
@@ -68,8 +85,15 @@ private:
         middle->setFather(last);
         middle->emptyRightReference();
         last->setFather(current);
+        if(last->getLeft() != nullptr){
+            TreeNode<T>* originalLeftLast = last->getLeft();
+            middle->setRight(originalLeftLast);
+            originalLeftLast->setFather(middle);
+        }
         last->setLeft(middle);
         current->setLeft(last);
+        middle->adjustWeight();
+        last->adjustWeight();
         rotateRightRight(current);
     }
 
@@ -82,9 +106,16 @@ private:
             current->setFather(newCurrent);
             newCurrent->emptyFatherReference();
         }
+        TreeNode<T>* leftToNewCurrent = newCurrent->getLeft();
         newCurrent->setLeft(current);
         current->emptyRightReference();
+        if(leftToNewCurrent != nullptr){
+            current->setRight(leftToNewCurrent);
+            leftToNewCurrent->setFather(current);
+            leftToNewCurrent->adjustWeight();
+        }
         current->adjustWeight();
+        current = newCurrent; //TODO: REVISAR QUE ESTE BIEN
     }
 
     void fixFatherReferences(TreeNode<T>* &current,TreeNode<T>* &newCurrent){
@@ -102,21 +133,30 @@ private:
 
     void balance(TreeNode<T>* &recentInserted){
         TreeNode<T>* currentNode = recentInserted;
+        int oneStep = NOTHING;
+        int twoStep = NOTHING;
         while (currentNode != nullptr){ //hasta llegar a la raiz
             currentNode->adjustWeight();
             if(!currentNode->isBalanced()){
-                if(currentNode->getRight() != nullptr && currentNode->getRight()->getRight() != nullptr){
+                int weight = currentNode->getInclinationWeight();
+                if(weight > 0 && (oneStep == RIGHT && twoStep == RIGHT)
+                    && currentNode->getRight() != nullptr && currentNode->getRight()->getRight() != nullptr){
                     rotateLeftLeft(currentNode);
-                }else if(currentNode->getLeft() != nullptr && currentNode->getLeft()->getLeft() != nullptr){
+                }else if(weight < 0 && (oneStep == LEFT && twoStep == LEFT)
+                    && currentNode->getLeft() != nullptr && currentNode->getLeft()->getLeft() != nullptr){
                     rotateRightRight(currentNode);
-                }else if(currentNode->getLeft() != nullptr && currentNode->getLeft()->getRight() != nullptr){
+                }else if(weight < 0 && (oneStep == LEFT && twoStep == RIGHT)
+                    && currentNode->getLeft() != nullptr && currentNode->getLeft()->getRight() != nullptr){
                     rotateLeftRight(currentNode);
-                }else if(currentNode->getRight() != nullptr && currentNode->getRight()->getLeft() != nullptr){
+                }else if(weight > 0 && (oneStep == RIGHT && twoStep == LEFT)
+                    && currentNode->getRight() != nullptr && currentNode->getRight()->getLeft() != nullptr){
                     rotateRightLeft(currentNode);
                 }else{
-                    std::cout<<"No se pudo balancear el arbol ERROR fatal";
+                    std::cout<<"No se pudo balancear el arbol ERROR fatal"<<std::endl;
                 }
             }
+            twoStep = oneStep;
+            oneStep = currentNode->isRightFromFather() ? RIGHT : LEFT;
             currentNode = currentNode->getFather();
         }
     }
