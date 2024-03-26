@@ -157,4 +157,12 @@ void Lexer::saveToken(int type) {
     reading = new std::string ();
 }
 
+void Lexer::showTokens() {
+    Node<Token>* currentNode = this->tokens->get(0);
+    while (currentNode != nullptr){
+        std::cout<<"["<<*currentNode->getContent()->getLexema()<<"] ";
+        currentNode = currentNode->getNext();
+    }
+}
+
 

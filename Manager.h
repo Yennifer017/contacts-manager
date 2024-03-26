@@ -9,12 +9,18 @@
 #include "LinkedList.h"
 #include "Token.h"
 #include "Lexer.h"
+#include "HashMap.h"
+#include "Group.h"
+#include "Translator.h"
 
 class Manager {
 private:
     Util* util;
     Lexer* lexer;
+    HashMap<Group>* groups;
+    Translator* translator;
     void terminal();
+
 public:
     Manager();
     void showMenu();

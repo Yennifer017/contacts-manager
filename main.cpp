@@ -28,6 +28,11 @@ int main() {
     map->insert(new std::string("claveeee"), new std::string("contenidoo 3"));
     map->showKeys();
 
+    HashMap<Group> *mapGroups = new HashMap<Group>;
+    LinkedList<Field> *fields = new LinkedList<Field>;
+    Group * group = new Group(fields);
+    mapGroups->insert(new std::string("trabajo"), group);
+
     //map->showKeys();
     std::cout<<*map->get(new std::string("hola"))->getContent()<<std::endl;*/
 
@@ -36,11 +41,11 @@ int main() {
     exporter->createDoc(new std::string("contenido"), new std::string("miArchivo"), Exporter::CURRENT_FOLDER, Exporter::TXT_EXTENSION);
     */
 
-    /*Manager* manager = new Manager();
-    manager->showMenu();*/
+    Manager* manager = new Manager();
+    manager->showMenu();
 
 
-    AVLtree< Node<std::string> >* tree = new AVLtree< Node<std::string> >();
+    /*AVLtree< Node<std::string> >* tree = new AVLtree< Node<std::string> >();
     std::string* code1 = new std::string("1");
     std::string* code2 = new std::string("1");
     std::string* code3 = new std::string("1");
@@ -59,7 +64,7 @@ int main() {
 
     TreeGraficator<Node<std::string>>* graph = new TreeGraficator<Node<std::string>> ();
     graph->setNameTree(new std::string("arbol1"));
-    graph->graficateTree(tree, "grafico");
+    graph->graficateTree(tree, "grafico");*/
 
 
 

@@ -8,6 +8,7 @@
 #include "HashContainer.h"
 #include <string>
 #include <stdexcept>
+#include <iostream>
 
 template <class T>
 class HashMap {
@@ -37,7 +38,6 @@ private:
                 currentTable[index] = content;
                 trying = false;
             } else if (currentContFromT->getKey()->compare(*content->getKey()) == 0) {
-                std::cout<<*content->getKey()<<std::endl;
                 throw std::invalid_argument("La clave esta repetida, no se pudo insertar");
             } else if (currentContFromT->getKey() != content->getKey()) {
                 index++;

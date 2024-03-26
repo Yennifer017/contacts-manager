@@ -24,4 +24,10 @@ add_executable(contacts_manager main.cpp
         Manager.cpp
         Manager.h
         TreeGraficator.h
+        Group.cpp
+        Group.h
+        Field.cpp
+        Field.h
+        Translator.cpp
+        Translator.h
 )

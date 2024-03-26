@@ -10,6 +10,8 @@
 Manager::Manager() {
     util = new Util();
     lexer = new Lexer();
+    groups = new HashMap<Group>();
+    translator = new Translator(groups);
 }
 
 void Manager::showMenu() {
@@ -49,6 +51,13 @@ void Manager::terminal() {
             break;
         }
         LinkedList<Token>* tokens = lexer->analizar(instructions);
+        translator->translate(tokens);
+        std::cout<<"Comandos ejecutados exitosamente"<<std::endl;
+
+        std::cout<<"En la tabla principal de grupos:"<<std::endl;
+        groups->showKeys();
+        std::cout<<"En la tabla secundaria de cliente:"<<std::endl;
+        groups->get(new std::string("clientes"))->getContent()->getHashTable()->showKeys();
 
         util->enterContinue();
     } while (true);

@@ -91,6 +91,24 @@ build CMakeFiles/contacts_manager.dir/Manager.cpp.o: CXX_COMPILER__contacts_mana
   OBJECT_DIR = CMakeFiles/contacts_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/contacts_manager.dir
 
+build CMakeFiles/contacts_manager.dir/Group.cpp.o: CXX_COMPILER__contacts_manager_unscanned_Debug /home/yennifer/Documents/clion-projects/contacts-manager/Group.cpp || cmake_object_order_depends_target_contacts_manager
+  DEP_FILE = CMakeFiles/contacts_manager.dir/Group.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/contacts_manager.dir
+  OBJECT_FILE_DIR = CMakeFiles/contacts_manager.dir
+
+build CMakeFiles/contacts_manager.dir/Field.cpp.o: CXX_COMPILER__contacts_manager_unscanned_Debug /home/yennifer/Documents/clion-projects/contacts-manager/Field.cpp || cmake_object_order_depends_target_contacts_manager
+  DEP_FILE = CMakeFiles/contacts_manager.dir/Field.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/contacts_manager.dir
+  OBJECT_FILE_DIR = CMakeFiles/contacts_manager.dir
+
+build CMakeFiles/contacts_manager.dir/Translator.cpp.o: CXX_COMPILER__contacts_manager_unscanned_Debug /home/yennifer/Documents/clion-projects/contacts-manager/Translator.cpp || cmake_object_order_depends_target_contacts_manager
+  DEP_FILE = CMakeFiles/contacts_manager.dir/Translator.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/contacts_manager.dir
+  OBJECT_FILE_DIR = CMakeFiles/contacts_manager.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target contacts_manager
@@ -99,7 +117,7 @@ build CMakeFiles/contacts_manager.dir/Manager.cpp.o: CXX_COMPILER__contacts_mana
 #############################################
 # Link the executable contacts_manager
 
-build contacts_manager: CXX_EXECUTABLE_LINKER__contacts_manager_Debug CMakeFiles/contacts_manager.dir/main.cpp.o CMakeFiles/contacts_manager.dir/Token.cpp.o CMakeFiles/contacts_manager.dir/Reguex.cpp.o CMakeFiles/contacts_manager.dir/Lexer.cpp.o CMakeFiles/contacts_manager.dir/Util.cpp.o CMakeFiles/contacts_manager.dir/Exporter.cpp.o CMakeFiles/contacts_manager.dir/Manager.cpp.o
+build contacts_manager: CXX_EXECUTABLE_LINKER__contacts_manager_Debug CMakeFiles/contacts_manager.dir/main.cpp.o CMakeFiles/contacts_manager.dir/Token.cpp.o CMakeFiles/contacts_manager.dir/Reguex.cpp.o CMakeFiles/contacts_manager.dir/Lexer.cpp.o CMakeFiles/contacts_manager.dir/Util.cpp.o CMakeFiles/contacts_manager.dir/Exporter.cpp.o CMakeFiles/contacts_manager.dir/Manager.cpp.o CMakeFiles/contacts_manager.dir/Group.cpp.o CMakeFiles/contacts_manager.dir/Field.cpp.o CMakeFiles/contacts_manager.dir/Translator.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/contacts_manager.dir
   POST_BUILD = :

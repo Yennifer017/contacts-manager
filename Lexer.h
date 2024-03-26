@@ -30,11 +30,12 @@ private:
 
     void saveToken(int type);
 
-
 public:
     Lexer();
     LinkedList<Token>* analizar(std::string* &texto);
     void analiceChar(std::string* &text);
+
+    void showTokens();
 };
 
 

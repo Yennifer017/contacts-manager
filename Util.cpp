@@ -11,7 +11,7 @@ std::string *Util::getLectura() {
     printGetter();
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Limpiar el buffer de entrada
-    std::cin >> lectura;
+    std::getline(std::cin, lectura); // Leer toda la línea
     return new std::string(lectura);
 }
 
@@ -20,7 +20,7 @@ void Util::enterContinue() {
     std::string lectura;
     // Limpiar el buffer de entrada
     std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Limpiar el buffer de entrada
+    //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Limpiar el buffer de entrada
     std::cin >> lectura;
     lectura.clear();
 }
