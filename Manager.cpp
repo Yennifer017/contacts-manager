@@ -11,8 +11,9 @@ Manager::Manager() {
     util = new Util();
     lexer = new Lexer();
     groups = new HashMap<Group>();
-    translator = new Translator(groups);
     reportero = new Reportero(groups);
+    translator = new Translator(groups, reportero);
+
 }
 
 void Manager::showMenu() {

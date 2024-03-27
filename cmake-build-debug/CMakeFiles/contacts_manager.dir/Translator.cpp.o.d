@@ -162,4 +162,5 @@ CMakeFiles/contacts_manager.dir/Translator.cpp.o: \
  /home/yennifer/Downloads/contacts-manager/AVLtree.h \
  /home/yennifer/Downloads/contacts-manager/TreeNode.h \
  /home/yennifer/Downloads/contacts-manager/Token.h \
- /home/yennifer/Downloads/contacts-manager/TypeTkn.h
+ /home/yennifer/Downloads/contacts-manager/TypeTkn.h \
+ /home/yennifer/Downloads/contacts-manager/Reportero.h

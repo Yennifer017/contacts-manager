@@ -1345,6 +1345,7 @@ CMakeFiles/contacts_manager.dir/Translator.cpp.o: /home/yennifer/Downloads/conta
   /home/yennifer/Downloads/contacts-manager/HashMap.h \
   /home/yennifer/Downloads/contacts-manager/LinkedList.h \
   /home/yennifer/Downloads/contacts-manager/Node.h \
+  /home/yennifer/Downloads/contacts-manager/Reportero.h \
   /home/yennifer/Downloads/contacts-manager/Token.h \
   /home/yennifer/Downloads/contacts-manager/Translator.h \
   /home/yennifer/Downloads/contacts-manager/TreeNode.h \

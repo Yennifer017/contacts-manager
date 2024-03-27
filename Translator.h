@@ -11,10 +11,12 @@
 #include "Token.h"
 #include "Node.h"
 #include "TypeTkn.h"
+#include "Reportero.h"
 
 class Translator {
 private:
     HashMap<Group>* groups;
+    Reportero * reportero;
     void translateAddInstructions(LinkedList<Token>* &tokens, Node<Token>* &currentNode);
 
     std::string translateAddGroupStm(LinkedList<Token>* &tokens, Node<Token>* &current);
@@ -24,7 +26,7 @@ private:
     void insertDataInTree( HashMap< AVLtree< LinkedList<std::string> > >* &tableGroup, LinkedList<std::string>* &data,
                            LinkedList<Field>* fields);
 public:
-    Translator(HashMap<Group>* &groups);
+    Translator(HashMap<Group>* &groups, Reportero* &_reportero);
     void translate(LinkedList<Token>* &tokens);
 };
 

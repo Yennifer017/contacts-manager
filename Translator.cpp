@@ -4,8 +4,9 @@
 
 #include "Translator.h"
 
-Translator::Translator(HashMap<Group> *&groups) {
+Translator::Translator(HashMap<Group> *&groups, Reportero* &_reportero) {
     this->groups = groups;
+    this->reportero = _reportero;
 }
 
 void Translator::translate(LinkedList<Token>* &tokens) {
@@ -18,7 +19,8 @@ void Translator::translate(LinkedList<Token>* &tokens) {
             case static_cast<int>(TypeTkn::FIND) :
                 break;
             default:
-                currentNode = currentNode->getNext(); //para pasar en caso se quede suspendido
+                //pasar en caso se quede suspendido
+                break;
         }
         currentNode = currentNode->getNext();
     }
@@ -47,7 +49,8 @@ std::string Translator::translateAddGroupStm(LinkedList<Token> *&tokens, Node<To
 std::string Translator::translateAddContactStm(LinkedList<Token> *&tokens, Node<Token> *&current) {
     current = current->getNext()->getNext()->getNext(); //para apuntar al nombre del grupo
     std::string* nameGroup = current->getContent()->getLexema();
-    Group* currentGroup = groups->get(nameGroup)->getContent();
+    HashContainer<Group>* hashContGroup = groups->get(nameGroup);
+    Group* currentGroup = hashContGroup->getContent();
     LinkedList<Token>* data = new LinkedList<Token>();
     current = current->getNext()->getNext()->getNext(); //para apuntar al primer dato
     while (current->getContent()->getType() != static_cast<int>(TypeTkn::PARENTESIS_R) ){

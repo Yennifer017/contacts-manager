@@ -25,7 +25,12 @@ private:
         for (int i = 0; i < key->length(); ++i) {
             number += (key->at(i)*i);
         }
-        return number % sizeArray;
+        int index = number % sizeArray;
+        if(index >= 0 && index<sizeArray){
+            return index;
+        }else{
+            return 0;
+        }
     }
 
     void insertInternal(HashContainer<T>** &currentTable, HashContainer<T>* content, int sizeTable){
