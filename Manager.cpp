@@ -79,21 +79,22 @@ void Manager::reportsMenu() {
         switch (option) {
             case 1:
                 std::cout<<reportero->getInformationPerGroup()<<std::endl;
-                util->enterContinue();
                 break;
             case 2:
                 std::cout<<reportero->getGlobalInformation()<<std::endl;
-                util->enterContinue();
                 break;
             case 3:
                 std::cout<<reportero->getTotalContactsPerGroup()<<std::endl;
-                util->enterContinue();
                 break;
             case 4:
+                std::cout<<reportero->getLogInformation()<<std::endl;
                 break;
             default:
                 running = false;
                 break;
+        }
+        if(running){
+            util->enterContinue();
         }
     } while (running);
 }

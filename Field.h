@@ -16,6 +16,8 @@ public:
     std::string* getName();
     int getType();
     bool isCompatibleType(int type);
+
+    std::string getNameType();
 };
 
 

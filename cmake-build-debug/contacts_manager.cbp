@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="contacts_manager"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="contacts_manager">
+				<Option output="/home/yennifer/Downloads/contacts-manager/cmake-build-debug/contacts_manager" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 contacts_manager"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="contacts_manager/fast">
+				<Option output="/home/yennifer/Downloads/contacts-manager/cmake-build-debug/contacts_manager" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 contacts_manager/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/AVLtree.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Exporter.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Exporter.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Field.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Field.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Group.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Group.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/HashContainer.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/HashMap.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Lexer.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Lexer.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/LinkedList.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Manager.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Manager.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Node.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Reguex.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Reguex.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Reportero.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Reportero.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Token.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Token.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Translator.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Translator.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/TreeGraficator.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/TreeNode.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/TypeTkn.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Util.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/Util.h">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/main.cpp">
+			<Option target="contacts_manager"/>
+		</Unit>
+		<Unit filename="/home/yennifer/Downloads/contacts-manager/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

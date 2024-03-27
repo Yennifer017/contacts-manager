@@ -2,10 +2,12 @@
 // Created by yennifer on 3/26/24.
 //
 
+#include <chrono>
 #include "Reportero.h"
 
 Reportero::Reportero(HashMap<Group> *&groups) {
     this->groups = groups;
+    this->logReport = "";
 }
 
 std::string Reportero::getTotalContactsPerGroup() {
@@ -84,4 +86,21 @@ std::string Reportero::getGlobalInformation() {
         reporte += "**Total de datos en el sistema: " + std::to_string(groups->getSize() + totalData) + "\n";
     }
     return reporte;
+}
+
+std::string Reportero::getCurrentTime() {
+    // Obtenemos el timepoint actual del reloj del sistema
+    auto now = std::chrono::system_clock::now();
+    // Convertimos el timepoint a un tiempo (std::time_t)
+    std::time_t current_time = std::chrono::system_clock::to_time_t(now);
+    // Convertimos el tiempo a una representación legible
+    return std::asctime(std::localtime(&current_time));
+}
+
+std::string Reportero::getLogInformation() {
+    return "LOGS DEL SISTEMA \n" + (this->logReport.empty() ? "__sin informacion para mostrar__" : this->logReport);
+}
+
+void Reportero::addLogAction(std::string action) {
+    this->logReport += action +  " -- " + getCurrentTime() + "\n";
 }

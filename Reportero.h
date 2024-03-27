@@ -12,11 +12,16 @@
 class Reportero {
 private:
     HashMap<Group> *groups;
+    std::string logReport;
+    std::string getCurrentTime();
 public:
     Reportero(HashMap<Group>* &groups);
     std::string getTotalContactsPerGroup();
     std::string getInformationPerGroup();
     std::string getGlobalInformation();
+    std::string getLogInformation();
+
+    void addLogAction(std::string  action);
 };
 
 

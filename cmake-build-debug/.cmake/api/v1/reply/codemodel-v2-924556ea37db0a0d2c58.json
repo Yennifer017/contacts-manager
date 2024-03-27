@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug",
-		"source" : "/home/yennifer/Documents/clion-projects/contacts-manager"
+		"build" : "/home/yennifer/Downloads/contacts-manager/cmake-build-debug",
+		"source" : "/home/yennifer/Downloads/contacts-manager"
 	},
 	"version" : 
 	{
