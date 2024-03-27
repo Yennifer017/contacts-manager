@@ -15,6 +15,8 @@ private:
 public:
     Reportero(HashMap<Group>* &groups);
     std::string getTotalContactsPerGroup();
+    std::string getInformationPerGroup();
+    std::string getGlobalInformation();
 };
 
 

@@ -24,6 +24,7 @@ private:
 
     void terminal();
     void reportsMenu();
+    void exportationMenu();
 
 public:
     Manager();

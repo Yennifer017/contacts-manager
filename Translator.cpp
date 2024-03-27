@@ -41,7 +41,7 @@ std::string Translator::translateAddGroupStm(LinkedList<Token> *&tokens, Node<To
     current = current->getNext(); //para parar en el punto y coma
     Group* group = new Group(fields);
     groups->insert(nameGroup, group);
-    return "Grupo <" + *nameGroup + "> agregado exitosamente\n";
+    return "Grupo <" + *nameGroup + "> agregado exitosamente";
 }
 
 std::string Translator::translateAddContactStm(LinkedList<Token> *&tokens, Node<Token> *&current) {
@@ -52,10 +52,21 @@ std::string Translator::translateAddContactStm(LinkedList<Token> *&tokens, Node<
     current = current->getNext()->getNext()->getNext(); //para apuntar al primer dato
     while (current->getContent()->getType() != static_cast<int>(TypeTkn::PARENTESIS_R) ){
         if(current->getContent()->getType() != static_cast<int>(TypeTkn::COMA)){
-            //TODO: guardar bien las fechas
-            Node<Token>* tokenNodeCurrent = current;
-            current = current->getNext();
-            data->insertLast(tokenNodeCurrent, true);
+            if(current->getContent()->getType() == static_cast<int>(TypeTkn::ENTERO) //save a date
+                && current->getNext()->getContent()->getType() == static_cast<int>(TypeTkn::GUION)){
+                std::string* lexema = new std::string("");
+                while (current->getContent()->getType() == static_cast<int>(TypeTkn::ENTERO)
+                    || current->getContent()->getType() == static_cast<int>(TypeTkn::GUION)){
+                    lexema->append(*current->getContent()->getLexema());
+                    current = current->getNext();
+                }
+                Token* token = new Token(lexema, static_cast<int>(TypeTkn::FECHA));
+                data->insertLast(token);
+            }else{ //save other data
+                Node<Token>* tokenNodeCurrent = current;
+                current = current->getNext();
+                data->insertLast(tokenNodeCurrent, true);
+            }
         }else{
             current = current->getNext();
         }

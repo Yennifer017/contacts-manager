@@ -35,6 +35,7 @@ void Manager::showMenu() {
                 reportsMenu();
                 break;
             case 4:
+                exportationMenu();
                 break;
             default:
                 running = false;
@@ -77,8 +78,12 @@ void Manager::reportsMenu() {
         int option = util->getNaturalNumber(1, 5);
         switch (option) {
             case 1:
+                std::cout<<reportero->getInformationPerGroup()<<std::endl;
+                util->enterContinue();
                 break;
             case 2:
+                std::cout<<reportero->getGlobalInformation()<<std::endl;
+                util->enterContinue();
                 break;
             case 3:
                 std::cout<<reportero->getTotalContactsPerGroup()<<std::endl;
@@ -91,4 +96,8 @@ void Manager::reportsMenu() {
                 break;
         }
     } while (running);
+}
+
+void Manager::exportationMenu() {
+
 }
