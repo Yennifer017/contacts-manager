@@ -15,6 +15,7 @@ public:
     Field(std::string* name, int type);
     std::string* getName();
     int getType();
+    bool isCompatibleType(int type);
 };
 
 

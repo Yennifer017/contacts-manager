@@ -14,12 +14,12 @@
 class Group {
 private:
     LinkedList<Field>* fields;
-    HashMap< AVLtree<Node<std::string>> >* hashTable;
+    HashMap< AVLtree< LinkedList<std::string> > >* hashTable;
     void initFields();
 public:
     Group(LinkedList<Field>* &fields);
     LinkedList<Field>* getFields();
-    HashMap< AVLtree<Node<std::string>> >* getHashTable();
+    HashMap< AVLtree<LinkedList<std::string>> >* getHashTable();
 };
 
 

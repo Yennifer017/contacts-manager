@@ -4,9 +4,6 @@
 
 #include "Group.h"
 
-HashMap<AVLtree<Node<std::string>>> *Group::getHashTable() {
-    return this->hashTable;
-}
 
 LinkedList<Field> *Group::getFields() {
     return this->fields;
@@ -14,14 +11,18 @@ LinkedList<Field> *Group::getFields() {
 
 Group::Group(LinkedList<Field>* &fields) {
     this->fields = fields;
-    this->hashTable = new HashMap< AVLtree<Node<std::string>> >();
+    this->hashTable = new HashMap< AVLtree< LinkedList<std::string> > >();
     initFields();
 }
 
 void Group::initFields() {
     Node<Field>* currentFieldNode = fields->get(0);
     while (currentFieldNode != nullptr){
-        hashTable->insert(currentFieldNode->getContent()->getName(), new AVLtree<Node<std::string>>());
+        hashTable->insert(currentFieldNode->getContent()->getName(), new AVLtree< LinkedList<std::string>>());
         currentFieldNode = currentFieldNode->getNext();
     }
+}
+
+HashMap<AVLtree<LinkedList<std::string>>> *Group::getHashTable() {
+    return this->hashTable;
 }

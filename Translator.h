@@ -15,8 +15,14 @@
 class Translator {
 private:
     HashMap<Group>* groups;
-    void translateAddGroupStm(LinkedList<Token>* &tokens, Node<Token>* &current);
-    void translateAddContactStm(LinkedList<Token>* &tokens, Node<Token>* &current);
+    void translateAddInstructions(LinkedList<Token>* &tokens, Node<Token>* &currentNode);
+
+    std::string translateAddGroupStm(LinkedList<Token>* &tokens, Node<Token>* &current);
+    std::string translateAddContactStm(LinkedList<Token>* &tokens, Node<Token>* &current);
+
+    LinkedList<std::string>* convertData(LinkedList<Field>* fields, LinkedList<Token>* &data);
+    void insertDataInTree( HashMap< AVLtree< LinkedList<std::string> > >* &tableGroup, LinkedList<std::string>* &data,
+                           LinkedList<Field>* fields);
 public:
     Translator(HashMap<Group>* &groups);
     void translate(LinkedList<Token>* &tokens);

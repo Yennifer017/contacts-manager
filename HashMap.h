@@ -99,6 +99,35 @@ public:
         throw std::invalid_argument("No se encontro el elemento");
     };
 
+    HashContainer<T>* get(int pos){
+        if(pos < 0 || pos >= size){
+            throw std::out_of_range("Error: No se puede acceder al elemento de la tabla hash");
+        }
+        return table[pos];
+    };
+
+    HashContainer<T>* getFirstNonNullData(){
+        if(size == 0){
+            throw std::invalid_argument("No hay datos no nulos");
+        }
+        HashContainer<T>* container;
+        for (int i = 0; i < size; ++i) {
+            container = get(i);
+            if(container != nullptr){
+                return container;
+            }
+        }
+        return nullptr;
+    };
+
+    int getSize(){
+        return this->size;
+    }
+
+    int getTotalElements(){
+        return this->totalElements;
+    }
+
     void showKeys(){
         for (int i = 0; i < size; ++i) {
             HashContainer<T>* currentCont = table[i];

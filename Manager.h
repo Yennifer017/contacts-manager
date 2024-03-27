@@ -12,14 +12,18 @@
 #include "HashMap.h"
 #include "Group.h"
 #include "Translator.h"
+#include "Reportero.h"
 
 class Manager {
 private:
     Util* util;
     Lexer* lexer;
+    Reportero* reportero;
     HashMap<Group>* groups;
     Translator* translator;
+
     void terminal();
+    void reportsMenu();
 
 public:
     Manager();

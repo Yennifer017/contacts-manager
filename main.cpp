@@ -41,11 +41,11 @@ int main() {
     exporter->createDoc(new std::string("contenido"), new std::string("miArchivo"), Exporter::CURRENT_FOLDER, Exporter::TXT_EXTENSION);
     */
 
-    /*Manager* manager = new Manager();
-    manager->showMenu();*/
+    Manager* manager = new Manager();
+    manager->showMenu();
 
 
-    AVLtree< Node<std::string> >* tree = new AVLtree< Node<std::string> >();
+    /*AVLtree< Node<std::string> >* tree = new AVLtree< Node<std::string> >();
     std::string* code1 = new std::string("w");
     std::string* code2 = new std::string("m");
     std::string* code3 = new std::string("v");
@@ -79,7 +79,7 @@ int main() {
 
     TreeGraficator<Node<std::string>>* graph = new TreeGraficator<Node<std::string>> ();
     graph->setNameTree(new std::string("arbol1"));
-    graph->graficateTree(tree, "grafico");
+    graph->graficateTree(tree, "grafico");*/
 
 
 

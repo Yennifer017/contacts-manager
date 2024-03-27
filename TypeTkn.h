@@ -14,6 +14,7 @@ enum class TypeTkn {
     INTEGER_NAME = 6,
     DATE_NAME = 7,
     CHAR_NAME = 8,
+
     CONTACT = 9,
     FIND = 10,
     IN = 11,
@@ -22,11 +23,14 @@ enum class TypeTkn {
     ENTERO = 13,
     CADENA = 14,
     CARACTER = 15,
+    FECHA = 22,
+
     IGUAL = 16,
     GUION = 17,
     PARENTESIS_L = 18,
     PARENTESIS_R = 19,
     COMA = 20,
     FIN_INSTRUCCION = 21
+
 };
 #endif //CONTACTS_MANAGER_TYPETKN_H

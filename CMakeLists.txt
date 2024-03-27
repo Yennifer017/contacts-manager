@@ -30,4 +30,6 @@ add_executable(contacts_manager main.cpp
         Field.h
         Translator.cpp
         Translator.h
+        Reportero.cpp
+        Reportero.h
 )
