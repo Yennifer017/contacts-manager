@@ -13,7 +13,7 @@ Manager::Manager() {
     groups = new HashMap<Group>();
     reportero = new Reportero(groups);
     translator = new Translator(groups, reportero);
-
+    exporter = new Exporter();
 }
 
 void Manager::showMenu() {
@@ -101,5 +101,31 @@ void Manager::reportsMenu() {
 }
 
 void Manager::exportationMenu() {
-
+    do {
+        util->clearConsole();
+        util->printSeparator();
+        std::cout << " MENU DE EXPORTACION " << std::endl;
+        util->printSeparator();
+        std::cout << "Grupos existentes:" << std::endl;
+        groups->showExistentKeys();
+        std::cout << "\nEscribe el nombre del grupo a exportar:" << std::endl;
+        std::string *nameGroup = util->getLectura();
+        try {
+            HashContainer<Group> *containerGroup = this->groups->get(nameGroup);
+            Group *group = containerGroup->getContent();
+            std::cout << "\nIngresa el numero de campo para obtener el nombre de los archivos a exportar:" << std::endl;
+            std::cout << group->getFieldsAndTypes() << std::endl;
+            int fieldDefineName = util->getNaturalNumber(1, group->getFields()->getSize());
+            fieldDefineName--;
+            exporter->exportGroupData(containerGroup, fieldDefineName);
+        } catch (const std::invalid_argument &e) {
+            std::cout << e.what() << std::endl;
+        }
+        util->enterContinue();
+        std::cout<<"Deseas realizar otra exportacion?   [1-Si / 2-No]"<<std::endl;
+        int continueVal = util->getNaturalNumber(1, 2);
+        if(continueVal == 2 ){
+            break;
+        }
+    } while (true);
 }

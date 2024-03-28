@@ -20,6 +20,7 @@ public:
     Group(LinkedList<Field>* &fields);
     LinkedList<Field>* getFields();
     HashMap< AVLtree<LinkedList<std::string>> >* getHashTable();
+    std::string getFieldsAndTypes();
 };
 
 

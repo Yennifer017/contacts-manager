@@ -43,7 +43,8 @@ std::string Translator::translateAddGroupStm(LinkedList<Token> *&tokens, Node<To
     current = current->getNext(); //para parar en el punto y coma
     Group* group = new Group(fields);
     groups->insert(nameGroup, group);
-    return "Grupo <" + *nameGroup + "> agregado exitosamente";
+    std::string result = "Grupo <" + *nameGroup + "> agregado exitosamente";
+    return result;
 }
 
 std::string Translator::translateAddContactStm(LinkedList<Token> *&tokens, Node<Token> *&current) {
@@ -85,14 +86,17 @@ void Translator::translateAddInstructions(LinkedList<Token>* &tokens, Node<Token
     switch (currentNode->getNext()->getContent()->getType()) {
         case static_cast<int>(TypeTkn::NEW):
             try {
-                std::cout<<translateAddGroupStm(tokens, currentNode)<<std::endl;
+                std::string result = translateAddGroupStm(tokens, currentNode);
+                std::cout<<result<<std::endl;
             }catch (const std::invalid_argument& e) {
                 std::cout<<"El nombre de un grupo que se desea ingresar ya existe"<<std::endl;
             }
             break;
         case static_cast<int>(TypeTkn::CONTACT):
             try {
-                std::cout<<translateAddContactStm(tokens, currentNode)<<std::endl;
+                std::string result = translateAddContactStm(tokens, currentNode);
+                reportero->addLogAction(result);
+                std::cout<<result<<std::endl;
             } catch (const std::invalid_argument& e) {
                 std::cout<<e.what()<<std::endl;
             }

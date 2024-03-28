@@ -26,3 +26,17 @@ void Group::initFields() {
 HashMap<AVLtree<LinkedList<std::string>>> *Group::getHashTable() {
     return this->hashTable;
 }
+
+std::string Group::getFieldsAndTypes() {
+    std::string text = "";
+    int index = 1;
+    Node<Field>* fieldNode = fields->get(0);
+    while (fieldNode != nullptr){
+        text += std::to_string(index);
+        text += "=[" + *fieldNode->getContent()->getName();
+        text += "=" + fieldNode->getContent()->getNameType() + "] ";
+        fieldNode = fieldNode->getNext();
+        index++;
+    }
+    return text;
+}

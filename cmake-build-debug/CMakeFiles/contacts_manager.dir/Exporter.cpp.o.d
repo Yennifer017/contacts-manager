@@ -176,6 +176,14 @@ CMakeFiles/contacts_manager.dir/Exporter.cpp.o: \
  /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
+ /home/yennifer/Downloads/contacts-manager/HashContainer.h \
+ /home/yennifer/Downloads/contacts-manager/Group.h \
+ /home/yennifer/Downloads/contacts-manager/LinkedList.h \
+ /home/yennifer/Downloads/contacts-manager/Node.h \
+ /home/yennifer/Downloads/contacts-manager/Field.h \
+ /home/yennifer/Downloads/contacts-manager/HashMap.h \
+ /home/yennifer/Downloads/contacts-manager/AVLtree.h \
+ /home/yennifer/Downloads/contacts-manager/TreeNode.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \

@@ -9,16 +9,24 @@
 #include<string>
 #include <fstream>
 #include <filesystem>
+#include "HashContainer.h"
+#include "Group.h"
+#include "TreeNode.h"
+#include "LinkedList.h"
+#include "Node.h"
 
 class Exporter {
+private:
+    void exportContactData(TreeNode<LinkedList<std::string>>* &treeNode, LinkedList<Field>* &fields,std::string* &pathFolder);
 public:
     static std::string* CURRENT_FOLDER;
     static std::string* TXT_EXTENSION;
     static std::string* GRAPHVIZ_EXTENSION;
 
-    void createDirectory(std::string* name, std::string* path);
-    void createDoc(std::string* content, std::string* name, std::string* path, std::string* extension);
+    std::string createDirectory(std::string* name, std::string* path);
+    void createDoc(std::string content, std::string name, std::string path, std::string* extension);
 
+    void exportGroupData(HashContainer<Group>* &group, int fieldNumber);
 };
 
 

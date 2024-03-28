@@ -13,6 +13,7 @@
 #include "Group.h"
 #include "Translator.h"
 #include "Reportero.h"
+#include "Exporter.h"
 
 class Manager {
 private:
@@ -21,6 +22,7 @@ private:
     Reportero* reportero;
     HashMap<Group>* groups;
     Translator* translator;
+    Exporter* exporter;
 
     void terminal();
     void reportsMenu();

@@ -46,14 +46,7 @@ std::string Reportero::getInformationPerGroup() {
                 reporte += std::to_string(currentGroupCont->getContent()->getFields()->getSize());
                 reporte += "\n          ";
 
-                int index = 1;
-                Node<Field>* fieldNode = currentGroupCont->getContent()->getFields()->get(0);
-                while (fieldNode != nullptr){
-                    reporte += std::to_string(index);
-                    reporte += "=[" + *fieldNode->getContent()->getName() + "] ";
-                    fieldNode = fieldNode->getNext();
-                    index++;
-                }
+                reporte += currentGroupCont->getContent()->getFieldsAndTypes();
 
                 reporte += "\n    Total de datos (todos los campos de contactos en los arboles): ";
                 reporte +=  std::to_string(currentGroupCont->getContent()
@@ -96,11 +89,13 @@ std::string Reportero::getCurrentTime() {
     // Convertimos el tiempo a una representación legible
     return std::asctime(std::localtime(&current_time));
 }
+void Reportero::addLogAction(std::string action) {
+    std::string logTime = getCurrentTime(); // Convertir el tiempo a std::string
+    this->logReport += action +  " -- " + logTime + "\n";
+}
 
 std::string Reportero::getLogInformation() {
     return "LOGS DEL SISTEMA \n" + (this->logReport.empty() ? "__sin informacion para mostrar__" : this->logReport);
 }
 
-void Reportero::addLogAction(std::string action) {
-    this->logReport += action +  " -- " + getCurrentTime() + "\n";
-}
+

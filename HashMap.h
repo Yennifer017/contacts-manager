@@ -43,7 +43,7 @@ private:
                 currentTable[index] = content;
                 trying = false;
             } else if (currentContFromT->getKey()->compare(*content->getKey()) == 0) {
-                throw std::invalid_argument("La clave esta repetida, no se pudo insertar");
+                throw std::invalid_argument("La clave" + *content->getKey() + "esta repetida, no se pudo insertar");
             } else if (currentContFromT->getKey() != content->getKey()) {
                 index++;
                 index = index>=sizeTable? 0: index;
@@ -86,13 +86,13 @@ public:
     };
 
     HashContainer<T>* get(std::string *key){
-        bool trying = false;
+        bool trying;
         int initialIndex = this->hashFunction(key, size);
         int index = initialIndex;
         do{
             HashContainer<T>* currentCont = table[index];
-            if(currentCont == nullptr && index == initialIndex){
-                throw std::invalid_argument("No se encontro el elemento");
+            if(currentCont == nullptr){
+                throw std::invalid_argument("No se encontro <" + *key + "> en la HashTable");
             }else if(currentCont->getKey()->compare(*key) == 0){
                 return currentCont;
             }else {
@@ -140,6 +140,15 @@ public:
                 std::cout<<"__vacio__"<<i<<std::endl;
             }else{
                 std::cout<<"La clave es "<<*currentCont->getKey()<<std::endl;
+            }
+        }
+    }
+
+    void showExistentKeys(){
+        for (int i = 0; i < size; ++i) {
+            HashContainer<T>* currentCont = table[i];
+            if(currentCont != nullptr) {
+                std::cout << "   ->" << *currentCont->getKey() << std::endl;
             }
         }
     }

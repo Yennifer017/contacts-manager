@@ -22,19 +22,17 @@ int main() {
 
 
     /*HashMap<std::string> *map = new HashMap<std::string>();
-    map->insert(new std::string("adios"), new std::string("contenidoo 4"));
+    std::string* key = new std::string("amigos");
+    map->insert(key, new std::string("contenidoo 1"));
+    key = new std::string("amigoss")
     map->insert(new std::string("hola"), new std::string("contenidoo 1"));
     map->insert(new std::string("clave1"), new std::string("contenidoo 2"));
     map->insert(new std::string("claveeee"), new std::string("contenidoo 3"));
     map->showKeys();
 
-    HashMap<Group> *mapGroups = new HashMap<Group>;
-    LinkedList<Field> *fields = new LinkedList<Field>;
-    Group * group = new Group(fields);
-    mapGroups->insert(new std::string("trabajo"), group);
-
-    //map->showKeys();
-    std::cout<<*map->get(new std::string("hola"))->getContent()<<std::endl;*/
+    std::string* valueToFind = new std::string("amigoss");
+    map->showKeys();
+    std::cout<<*map->get(valueToFind)->getContent()<<std::endl;*/
 
     /*Exporter* exporter = new Exporter();
     exporter->createDirectory(new std::string("miCarpeta"), Exporter::CURRENT_FOLDER);
