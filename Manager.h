@@ -35,9 +35,11 @@ private:
 
     //graphs menus
     void specificGraphMenu();
+    void groupGraphMenu();
+
     void treeGraphMenu();
     void fieldsGraphMenu();
-    void groupGraphMenu();
+    void groupTableGraphMenu();
 
 public:
     Manager();

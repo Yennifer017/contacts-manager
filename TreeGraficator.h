@@ -17,7 +17,7 @@ class TreeGraficator {
 private:
     int numberNode;
     std::string* nameTree;
-    std::string* RED_COLOR = new std::string("red"), * BLUE_COLOR = new std::string("blue"), * BLACK_COLOR = new std::string("black");
+    std::string* RED_COLOR = new std::string("red"), * BLUE_COLOR = new std::string("blue"), * GREEN_COLOR = new std::string("green");
 
     Exporter* exporter;
     DotFileExecutor* dotFileExecutor;
@@ -70,16 +70,17 @@ public:
         std::string code = "digraph tree{";
         if(!tree->isEmpty()){
             TreeNode<T>* raiz = tree->getRaiz();
-            code += codeGraphTreeNode(raiz, false, 0, BLACK_COLOR);
+            code += codeGraphTreeNode(raiz, false, 0, GREEN_COLOR);
         }
         code += "}";
         dotFileExecutor->generateImage(code, *Exporter::CURRENT_FOLDER, nameGraph);
     };
 
     std::string getCodeForTree(AVLtree<T>* tree){
+        this->numberNode = 0;
         if(!tree->isEmpty()){
             TreeNode<T>* raiz = tree->getRaiz();
-            return codeGraphTreeNode(raiz, false, 0, BLACK_COLOR);
+            return codeGraphTreeNode(raiz, false, 0, GREEN_COLOR);
         }
         return "";
     }

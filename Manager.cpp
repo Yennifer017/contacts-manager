@@ -146,8 +146,12 @@ void Manager::generateGraphicsMenu() {
         int option = util->getNaturalNumber(1, 4);
         switch (option) {
             case 1:
+                std::cout<<"Se ha generado la grafica de todos los datos, nombre del archivo: ";
+                std::cout<<grapher->graphAll(GROUP_NAME, groups)<<std::endl;
+                util->enterContinue();
                 break;
             case 2:
+                groupGraphMenu();
                 break;
             case 3:
                 specificGraphMenu();
@@ -159,6 +163,20 @@ void Manager::generateGraphicsMenu() {
     }while (running);
 }
 
+void Manager::groupGraphMenu() {
+    util->printSeparator();
+    std::cout << "Grupos existentes:" << std::endl;
+    groups->showExistentKeys();
+    std::cout << "\nEscribe el nombre del grupo para graficar completo:" << std::endl;
+    std::string *nameGroup = util->getLectura();
+    try {
+        std::cout<<"Archivo generado: "<<grapher->graphGroup(nameGroup, this->groups->get(nameGroup)->getContent())<<std::endl;
+    } catch (const std::invalid_argument &e) {
+        std::cout << e.what() << std::endl;
+    }
+    util->enterContinue();
+}
+
 void Manager::specificGraphMenu() {
     util->printSeparator();
     std::cout<<"Ingresa que estructura deseas graficar:"<<std::endl;
@@ -167,7 +185,7 @@ void Manager::specificGraphMenu() {
     int option = util->getNaturalNumber(1,4);
     switch (option) {
         case 1:
-            groupGraphMenu();
+            groupTableGraphMenu();
             break;
         case 2:
             fieldsGraphMenu();
@@ -222,7 +240,7 @@ void Manager::fieldsGraphMenu() {
     util->enterContinue();
 }
 
-void Manager::groupGraphMenu() {
+void Manager::groupTableGraphMenu() {
     grapher->getGroupTableGrapher()->graficateHashTable(GROUP_NAME, groups, true, *GROUP_NAME);
     std::cout<<"La grafica debio generarse, nombre del archivo: "<<*GROUP_NAME<<std::endl;
     util->enterContinue();

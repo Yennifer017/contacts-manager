@@ -35,6 +35,7 @@ public:
     }
 
     std::string getCodeGraphTable(std::string* nameTable, HashMap<T>* &hashMap, bool includeEmptyPositions){
+        numberNode = 0;
         std::string code = "";
         code  += createGraphNode(nameTable);
         numberNode++;
