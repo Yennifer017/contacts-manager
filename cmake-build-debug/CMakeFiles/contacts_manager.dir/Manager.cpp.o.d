@@ -175,6 +175,7 @@ CMakeFiles/contacts_manager.dir/Manager.cpp.o: \
  /home/yennifer/Downloads/contacts-manager/Translator.h \
  /home/yennifer/Downloads/contacts-manager/TypeTkn.h \
  /home/yennifer/Downloads/contacts-manager/Reportero.h \
+ /home/yennifer/Downloads/contacts-manager/Searcher.h \
  /home/yennifer/Downloads/contacts-manager/Exporter.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \

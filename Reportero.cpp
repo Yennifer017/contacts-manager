@@ -65,7 +65,7 @@ std::string Reportero::getGlobalInformation() {
     if(groups->getTotalElements() == 0 ){
         reporte += "__El sistema aun no cuenta con informacion__\n";
     }else{
-        reporte += "--Total de grupos:" + std::to_string(groups->getSize()) + "\n";
+        reporte += "--Total de grupos:" + std::to_string(groups->getTotalElements()) + "\n";
         int totalData = 0;
         for (int i = 0; i < groups->getSize(); ++i) {
             HashContainer<Group>* currentGroupCont = groups->get(i);

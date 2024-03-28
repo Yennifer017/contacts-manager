@@ -7,6 +7,7 @@
 Translator::Translator(HashMap<Group> *&groups, Reportero* &_reportero) {
     this->groups = groups;
     this->reportero = _reportero;
+    this->searcher = new Searcher<LinkedList<std::string>>();
 }
 
 void Translator::translate(LinkedList<Token>* &tokens) {
@@ -17,6 +18,7 @@ void Translator::translate(LinkedList<Token>* &tokens) {
                 translateAddInstructions(tokens, currentNode);
                 break;
             case static_cast<int>(TypeTkn::FIND) :
+                std::cout<<translateFindStm(tokens, currentNode)<<std::endl;
                 break;
             default:
                 //pasar en caso se quede suspendido
@@ -139,3 +141,58 @@ void Translator::insertDataInTree(HashMap<AVLtree<LinkedList<std::string>>>* &ta
         currentField = currentField->getNext();
     }
 }
+
+std::string Translator::translateFindStm(LinkedList<Token> *&tokens, Node<Token> *&current) {
+    std::string result;
+    current = current->getNext()->getNext()->getNext(); //apuntar a nombre del grupo
+    try {
+        Group* group = groups->get(current->getContent()->getLexema())->getContent();
+        current = current->getNext()->getNext()->getNext()->getNext(); //apuntar a nombre del campo a buscar
+        AVLtree<LinkedList<std::string>>* tree = group->getHashTable()->get(current->getContent()->getLexema())->getContent();
+        current = current->getNext()->getNext(); //para apuntar al nombre del dato a buscar
+
+        LinkedList<Field>* fields = group->getFields();
+        auto* raiz = tree->getRaiz();
+        if(!tree->isEmpty()){
+            result += findInformation(current->getContent()->getLexema(), fields, raiz);
+        }
+    }catch (const std::invalid_argument& e){
+        result += e.what();
+    }
+    result = result.empty() ? "__NO HAY INFORMACION PARA MOSTRAR__" : result;
+    return "Resultados de la busqueda:\n" + result + "\n --------------------------------------------\n\n";
+}
+
+std::string Translator::findInformation(std::string* key, LinkedList<Field>* &fieldsList, TreeNode<LinkedList<std::string>>* treeNode) {
+    std::string information = "";
+    try {
+        TreeNode<LinkedList<std::string>> *treeNodeFind = searcher->find(key, treeNode);
+
+        //agregar la informacion del contacto
+        Node<std::string>* currentNodeInf = treeNodeFind->getContent()->get(0);
+        Node<Field>* currentField = fieldsList->get(0);
+        while (currentNodeInf != nullptr && currentField != nullptr){
+            information += *currentField->getContent()->getName() + " = " + *currentNodeInf->getContent();
+            if(currentNodeInf->getNext() != nullptr){
+                information += 9;
+            }
+            currentNodeInf = currentNodeInf->getNext();
+            currentField = currentField->getNext();
+        }
+        information += "\n";
+
+        TreeNode<LinkedList<std::string>>* right = treeNodeFind->getRight();
+        TreeNode<LinkedList<std::string>>* left = treeNodeFind->getLeft();
+        if(right != nullptr){
+            information += findInformation(key, fieldsList,right);
+        }
+        if(left != nullptr){
+            information += findInformation(key, fieldsList, left);
+        }
+
+    }catch (const std::invalid_argument& e){
+        //ignorar porque no se encontro la informacion
+    }
+    return information;
+}
+

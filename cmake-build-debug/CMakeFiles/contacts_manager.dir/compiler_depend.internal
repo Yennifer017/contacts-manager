@@ -1277,6 +1277,7 @@ CMakeFiles/contacts_manager.dir/Manager.cpp.o
  /home/yennifer/Downloads/contacts-manager/Node.h
  /home/yennifer/Downloads/contacts-manager/Reguex.h
  /home/yennifer/Downloads/contacts-manager/Reportero.h
+ /home/yennifer/Downloads/contacts-manager/Searcher.h
  /home/yennifer/Downloads/contacts-manager/Token.h
  /home/yennifer/Downloads/contacts-manager/Translator.h
  /home/yennifer/Downloads/contacts-manager/TreeGraficator.h
@@ -1878,6 +1879,7 @@ CMakeFiles/contacts_manager.dir/Translator.cpp.o
  /home/yennifer/Downloads/contacts-manager/LinkedList.h
  /home/yennifer/Downloads/contacts-manager/Node.h
  /home/yennifer/Downloads/contacts-manager/Reportero.h
+ /home/yennifer/Downloads/contacts-manager/Searcher.h
  /home/yennifer/Downloads/contacts-manager/Token.h
  /home/yennifer/Downloads/contacts-manager/Translator.h
  /home/yennifer/Downloads/contacts-manager/TreeNode.h
@@ -2275,6 +2277,7 @@ CMakeFiles/contacts_manager.dir/main.cpp.o
  /home/yennifer/Downloads/contacts-manager/Node.h
  /home/yennifer/Downloads/contacts-manager/Reguex.h
  /home/yennifer/Downloads/contacts-manager/Reportero.h
+ /home/yennifer/Downloads/contacts-manager/Searcher.h
  /home/yennifer/Downloads/contacts-manager/Token.h
  /home/yennifer/Downloads/contacts-manager/Translator.h
  /home/yennifer/Downloads/contacts-manager/TreeGraficator.h

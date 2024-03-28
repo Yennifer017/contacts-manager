@@ -37,4 +37,5 @@ add_executable(contacts_manager main.cpp
         HashTableGrapher.h
         DotFileExecutor.cpp
         DotFileExecutor.h
+        Searcher.h
 )

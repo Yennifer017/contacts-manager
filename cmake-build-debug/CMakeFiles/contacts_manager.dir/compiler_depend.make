@@ -1270,6 +1270,7 @@ CMakeFiles/contacts_manager.dir/Manager.cpp.o: /home/yennifer/Downloads/contacts
   /home/yennifer/Downloads/contacts-manager/Node.h \
   /home/yennifer/Downloads/contacts-manager/Reguex.h \
   /home/yennifer/Downloads/contacts-manager/Reportero.h \
+  /home/yennifer/Downloads/contacts-manager/Searcher.h \
   /home/yennifer/Downloads/contacts-manager/Token.h \
   /home/yennifer/Downloads/contacts-manager/Translator.h \
   /home/yennifer/Downloads/contacts-manager/TreeGraficator.h \
@@ -1867,6 +1868,7 @@ CMakeFiles/contacts_manager.dir/Translator.cpp.o: /home/yennifer/Downloads/conta
   /home/yennifer/Downloads/contacts-manager/LinkedList.h \
   /home/yennifer/Downloads/contacts-manager/Node.h \
   /home/yennifer/Downloads/contacts-manager/Reportero.h \
+  /home/yennifer/Downloads/contacts-manager/Searcher.h \
   /home/yennifer/Downloads/contacts-manager/Token.h \
   /home/yennifer/Downloads/contacts-manager/Translator.h \
   /home/yennifer/Downloads/contacts-manager/TreeNode.h \
@@ -2262,6 +2264,7 @@ CMakeFiles/contacts_manager.dir/main.cpp.o: /home/yennifer/Downloads/contacts-ma
   /home/yennifer/Downloads/contacts-manager/Node.h \
   /home/yennifer/Downloads/contacts-manager/Reguex.h \
   /home/yennifer/Downloads/contacts-manager/Reportero.h \
+  /home/yennifer/Downloads/contacts-manager/Searcher.h \
   /home/yennifer/Downloads/contacts-manager/Token.h \
   /home/yennifer/Downloads/contacts-manager/Translator.h \
   /home/yennifer/Downloads/contacts-manager/TreeGraficator.h \
@@ -2492,8 +2495,6 @@ CMakeFiles/contacts_manager.dir/main.cpp.o: /home/yennifer/Downloads/contacts-ma
   /usr/lib/linux/uapi/x86/asm/errno.h
 
 
-/home/yennifer/Downloads/contacts-manager/main.cpp:
-
 /home/yennifer/Downloads/contacts-manager/Translator.cpp:
 
 /home/yennifer/Downloads/contacts-manager/Token.cpp:
@@ -2509,6 +2510,10 @@ CMakeFiles/contacts_manager.dir/main.cpp.o: /home/yennifer/Downloads/contacts-ma
 /usr/include/c++/13/bits/algorithmfwd.h:
 
 /usr/include/c++/13/algorithm:
+
+/home/yennifer/Downloads/contacts-manager/main.cpp:
+
+/home/yennifer/Downloads/contacts-manager/Searcher.h:
 
 /home/yennifer/Downloads/contacts-manager/Manager.cpp:
 

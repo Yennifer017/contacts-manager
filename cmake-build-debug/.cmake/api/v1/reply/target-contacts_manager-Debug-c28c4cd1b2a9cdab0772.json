@@ -133,7 +133,8 @@
 				28,
 				30,
 				31,
-				33
+				33,
+				34
 			]
 		}
 	],
@@ -320,6 +321,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "DotFileExecutor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Searcher.h",
 			"sourceGroupIndex" : 1
 		}
 	],
