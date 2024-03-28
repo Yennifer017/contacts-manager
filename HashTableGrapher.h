@@ -11,17 +11,18 @@
 template <class T>
 class HashTableGrapher {
 private:
+    std::string *EMPTY = new std::string("__EMPTY__");
     int numberNode;
     std::string* nameHashTable;
     DotFileExecutor* dotFileExecutor;
 
     std::string getConnectNodeCode(int father, int child){
-        return *nameHashTable + std::to_string(father) + "->" + *nameHashTable + std::to_string(child) + ";";
+        return *nameHashTable + std::to_string(father) + "->" + *nameHashTable + std::to_string(child) + ";\n";
     }
 
     std::string createGraphNode(std::string* label){
         std::string code = *nameHashTable + std::to_string(numberNode);
-        code += "[" + *label + "];";
+        code += "[label=\"" + *label + "\"];\n";
         return code;
     };
 
@@ -33,14 +34,14 @@ public:
         dotFileExecutor = new DotFileExecutor();
     }
 
-    std::string getCodeGraphTable(std::string nameTable, HashMap<T>* &hashMap, bool includeEmptyPositions){
+    std::string getCodeGraphTable(std::string* nameTable, HashMap<T>* &hashMap, bool includeEmptyPositions){
         std::string code = "";
         code  += createGraphNode(nameTable);
         numberNode++;
         for (int i = 0; i < hashMap->getSize(); ++i) {
             HashContainer<T>* hashContainer = hashMap->get(i);
             if(hashContainer == nullptr && includeEmptyPositions){
-                code += createGraphNode("*__empty__*");
+                code += createGraphNode(EMPTY);
                 code += getConnectNodeCode(0, numberNode);
                 numberNode++;
             }else if(hashContainer != nullptr){
@@ -52,7 +53,7 @@ public:
         return code;
     }
 
-    void graficateHashTable(std::string nameTable, HashMap<T>* &hashMap, bool includeEmptyPositions, std::string nameGraph){
+    void graficateHashTable(std::string* nameTable, HashMap<T>* &hashMap, bool includeEmptyPositions, std::string nameGraph){
         numberNode = 0;
         std::string code = "digraph hashTable{";
         code += getCodeGraphTable(nameTable, hashMap, includeEmptyPositions);

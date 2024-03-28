@@ -18,6 +18,7 @@
 
 class Manager {
 private:
+    std::string *GROUP_NAME;
     Util* util;
     Lexer* lexer;
     Reportero* reportero;
@@ -26,13 +27,17 @@ private:
     Exporter* exporter;
     Grapher* grapher;
 
+    //principal functions menus
     void terminal();
     void reportsMenu();
     void exportationMenu();
     void generateGraphicsMenu();
-    void specificGraphMenu();
 
+    //graphs menus
+    void specificGraphMenu();
     void treeGraphMenu();
+    void fieldsGraphMenu();
+    void groupGraphMenu();
 
 public:
     Manager();

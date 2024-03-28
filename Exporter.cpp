@@ -21,7 +21,7 @@ std::string* Exporter::TXT_EXTENSION = new std::string(".txt");
 std::string* Exporter::GRAPHVIZ_EXTENSION = new std::string(".dot");
 
 std::string Exporter::createDirectory(std::string* const name, std::string* const path) {
-    string folderName = path->append("/").append(*name);
+    string folderName = *path + Exporter::getFileSeparator() + *name;
     if (fs::exists(folderName) && fs::is_directory(folderName)) {
         throw std::invalid_argument("La carpeta ya existe");
     } else {

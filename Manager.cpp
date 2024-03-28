@@ -15,6 +15,7 @@ Manager::Manager() {
     translator = new Translator(groups, reportero);
     exporter = new Exporter();
     grapher = new Grapher();
+    GROUP_NAME = new std::string("GROUP");
 }
 
 void Manager::showMenu() {
@@ -161,14 +162,15 @@ void Manager::generateGraphicsMenu() {
 void Manager::specificGraphMenu() {
     util->printSeparator();
     std::cout<<"Ingresa que estructura deseas graficar:"<<std::endl;
-    std::cout<<"    1-HashTable de los grupos\n    2->HashTable de campos de un grupo especifico"<<std::endl;
+    std::cout<<"    1->HashTable de los grupos\n    2->HashTable de campos de un grupo especifico"<<std::endl;
     std::cout<<"    3->ArbolAVL de un campo de un grupo\n    4->Salir"<<std::endl;
     int option = util->getNaturalNumber(1,4);
     switch (option) {
         case 1:
-            //grapher->getGroupTableGrapher()->graficateHashTable("GROUPS", groups, true, "GROUPS_GRAPH");
+            groupGraphMenu();
             break;
         case 2:
+            fieldsGraphMenu();
             break;
         case 3:
             treeGraphMenu();
@@ -179,6 +181,7 @@ void Manager::specificGraphMenu() {
 }
 
 void Manager::treeGraphMenu() {
+    util->printSeparator();
     std::cout << "Grupos existentes:" << std::endl;
     groups->showExistentKeys();
     std::cout << "\nEscribe el nombre del grupo a exportar:" << std::endl;
@@ -190,9 +193,37 @@ void Manager::treeGraphMenu() {
         std::cout << group->getFieldsAndTypes() << std::endl;
         int fieldDefineName = util->getNaturalNumber(1, group->getFields()->getSize());
         fieldDefineName--;
-        grapher->getTreeGrapher()->graficateTree(group->getHashTable()->get(
-                group->getFields()->get(fieldDefineName)->getContent()->getName())->getContent(), "ARBOL_");
+        std::string *fieldName = group->getFields()->get(fieldDefineName)->getContent()->getName();
+        std::string nameGraph = *nameGroup + "_" + *fieldName;
+        grapher->getTreeGrapher()->graficateTree(group->getHashTable()->get(fieldName)->getContent(), nameGraph);
+        std::cout<<"Grafico generado correctamente, nombre: "<<nameGraph<<std::endl;
     } catch (const std::invalid_argument &e) {
         std::cout << e.what() << std::endl;
     }
+    util->enterContinue();
+}
+
+void Manager::fieldsGraphMenu() {
+    util->printSeparator();
+    std::cout << "Grupos existentes:" << std::endl;
+    groups->showExistentKeys();
+    std::cout << "\nEscribe el nombre del grupo a exportar sus campos:" << std::endl;
+    std::string *nameGroup = util->getLectura();
+    try {
+        HashContainer<Group> *containerGroup = this->groups->get(nameGroup);
+        Group *group = containerGroup->getContent();
+        HashMap<AVLtree<LinkedList<std::string>>>* hashMapFields = group->getHashTable();
+        std::string nameGraph = *nameGroup + "_fields_HM";
+        grapher->getFieldTableGrapher()->graficateHashTable(nameGroup, hashMapFields, true, nameGraph);
+        std::cout<<"Grafico generado correctamente, nombre: "<<nameGraph<<std::endl;
+    } catch (const std::invalid_argument &e) {
+        std::cout << e.what() << std::endl;
+    }
+    util->enterContinue();
+}
+
+void Manager::groupGraphMenu() {
+    grapher->getGroupTableGrapher()->graficateHashTable(GROUP_NAME, groups, true, *GROUP_NAME);
+    std::cout<<"La grafica debio generarse, nombre del archivo: "<<*GROUP_NAME<<std::endl;
+    util->enterContinue();
 }
