@@ -22,6 +22,7 @@ public:
     static std::string* CURRENT_FOLDER;
     static std::string* TXT_EXTENSION;
     static std::string* GRAPHVIZ_EXTENSION;
+    static std::string getFileSeparator();
 
     std::string createDirectory(std::string* name, std::string* path);
     void createDoc(std::string content, std::string name, std::string path, std::string* extension);

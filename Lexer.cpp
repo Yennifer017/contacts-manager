@@ -129,7 +129,10 @@ void Lexer::saveString() {
         std::string s = *reading;
         saveError(s);
     }else {
-        saveToken(getTypeCadena(reading->at(0)));
+        int type = getTypeCadena(reading->at(0));
+        std::string newString = reading->substr(1, reading->length() - 2);
+        reading = new std::string(newString);
+        saveToken(type);
     }
 }
 

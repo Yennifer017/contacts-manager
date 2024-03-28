@@ -223,6 +223,34 @@ CMakeFiles/contacts_manager.dir/Reportero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Reportero.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Reportero.cpp -o CMakeFiles/contacts_manager.dir/Reportero.cpp.s
 
+CMakeFiles/contacts_manager.dir/Grapher.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
+CMakeFiles/contacts_manager.dir/Grapher.cpp.o: /home/yennifer/Downloads/contacts-manager/Grapher.cpp
+CMakeFiles/contacts_manager.dir/Grapher.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/contacts_manager.dir/Grapher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Grapher.cpp.o -MF CMakeFiles/contacts_manager.dir/Grapher.cpp.o.d -o CMakeFiles/contacts_manager.dir/Grapher.cpp.o -c /home/yennifer/Downloads/contacts-manager/Grapher.cpp
+
+CMakeFiles/contacts_manager.dir/Grapher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Grapher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Grapher.cpp > CMakeFiles/contacts_manager.dir/Grapher.cpp.i
+
+CMakeFiles/contacts_manager.dir/Grapher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Grapher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Grapher.cpp -o CMakeFiles/contacts_manager.dir/Grapher.cpp.s
+
+CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
+CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp
+CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o -MF CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o.d -o CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o -c /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp
+
+CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp > CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.i
+
+CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp -o CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.s
+
 # Object files for target contacts_manager
 contacts_manager_OBJECTS = \
 "CMakeFiles/contacts_manager.dir/main.cpp.o" \
@@ -235,7 +263,9 @@ contacts_manager_OBJECTS = \
 "CMakeFiles/contacts_manager.dir/Group.cpp.o" \
 "CMakeFiles/contacts_manager.dir/Field.cpp.o" \
 "CMakeFiles/contacts_manager.dir/Translator.cpp.o" \
-"CMakeFiles/contacts_manager.dir/Reportero.cpp.o"
+"CMakeFiles/contacts_manager.dir/Reportero.cpp.o" \
+"CMakeFiles/contacts_manager.dir/Grapher.cpp.o" \
+"CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o"
 
 # External object files for target contacts_manager
 contacts_manager_EXTERNAL_OBJECTS =
@@ -251,9 +281,11 @@ contacts_manager: CMakeFiles/contacts_manager.dir/Group.cpp.o
 contacts_manager: CMakeFiles/contacts_manager.dir/Field.cpp.o
 contacts_manager: CMakeFiles/contacts_manager.dir/Translator.cpp.o
 contacts_manager: CMakeFiles/contacts_manager.dir/Reportero.cpp.o
+contacts_manager: CMakeFiles/contacts_manager.dir/Grapher.cpp.o
+contacts_manager: CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o
 contacts_manager: CMakeFiles/contacts_manager.dir/build.make
 contacts_manager: CMakeFiles/contacts_manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable contacts_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable contacts_manager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/contacts_manager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

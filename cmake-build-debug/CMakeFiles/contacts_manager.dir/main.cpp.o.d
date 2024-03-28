@@ -192,4 +192,7 @@ CMakeFiles/contacts_manager.dir/main.cpp.o: \
  /home/yennifer/Downloads/contacts-manager/Translator.h \
  /home/yennifer/Downloads/contacts-manager/TypeTkn.h \
  /home/yennifer/Downloads/contacts-manager/Reportero.h \
+ /home/yennifer/Downloads/contacts-manager/Grapher.h \
+ /home/yennifer/Downloads/contacts-manager/HashTableGrapher.h \
+ /home/yennifer/Downloads/contacts-manager/DotFileExecutor.h \
  /home/yennifer/Downloads/contacts-manager/TreeGraficator.h

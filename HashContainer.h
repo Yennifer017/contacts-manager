@@ -1,5 +1,6 @@
 //
 // Created by yennifer on 3/21/24.
+// important: read the follow link: https://es.stackoverflow.com/questions/47912/problema-al-compilar-plantillas-en-archivos-separados-en-c
 //
 
 #ifndef CONTACTS_MANAGER_HASHCONTAINER_H

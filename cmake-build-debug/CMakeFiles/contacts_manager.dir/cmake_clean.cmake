@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o"
+  "CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o.d"
   "CMakeFiles/contacts_manager.dir/Exporter.cpp.o"
   "CMakeFiles/contacts_manager.dir/Exporter.cpp.o.d"
   "CMakeFiles/contacts_manager.dir/Field.cpp.o"
   "CMakeFiles/contacts_manager.dir/Field.cpp.o.d"
+  "CMakeFiles/contacts_manager.dir/Grapher.cpp.o"
+  "CMakeFiles/contacts_manager.dir/Grapher.cpp.o.d"
   "CMakeFiles/contacts_manager.dir/Group.cpp.o"
   "CMakeFiles/contacts_manager.dir/Group.cpp.o.d"
   "CMakeFiles/contacts_manager.dir/Lexer.cpp.o"

@@ -32,4 +32,9 @@ add_executable(contacts_manager main.cpp
         Translator.h
         Reportero.cpp
         Reportero.h
+        Grapher.cpp
+        Grapher.h
+        HashTableGrapher.h
+        DotFileExecutor.cpp
+        DotFileExecutor.h
 )

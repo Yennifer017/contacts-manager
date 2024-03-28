@@ -129,6 +129,30 @@ contacts_manager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/build
 .PHONY : contacts_manager/fast
 
+DotFileExecutor.o: DotFileExecutor.cpp.o
+.PHONY : DotFileExecutor.o
+
+# target to build an object file
+DotFileExecutor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o
+.PHONY : DotFileExecutor.cpp.o
+
+DotFileExecutor.i: DotFileExecutor.cpp.i
+.PHONY : DotFileExecutor.i
+
+# target to preprocess a source file
+DotFileExecutor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.i
+.PHONY : DotFileExecutor.cpp.i
+
+DotFileExecutor.s: DotFileExecutor.cpp.s
+.PHONY : DotFileExecutor.s
+
+# target to generate assembly for a file
+DotFileExecutor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.s
+.PHONY : DotFileExecutor.cpp.s
+
 Exporter.o: Exporter.cpp.o
 .PHONY : Exporter.o
 
@@ -176,6 +200,30 @@ Field.s: Field.cpp.s
 Field.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/Field.cpp.s
 .PHONY : Field.cpp.s
+
+Grapher.o: Grapher.cpp.o
+.PHONY : Grapher.o
+
+# target to build an object file
+Grapher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/Grapher.cpp.o
+.PHONY : Grapher.cpp.o
+
+Grapher.i: Grapher.cpp.i
+.PHONY : Grapher.i
+
+# target to preprocess a source file
+Grapher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/Grapher.cpp.i
+.PHONY : Grapher.cpp.i
+
+Grapher.s: Grapher.cpp.s
+.PHONY : Grapher.s
+
+# target to generate assembly for a file
+Grapher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/Grapher.cpp.s
+.PHONY : Grapher.cpp.s
 
 Group.o: Group.cpp.o
 .PHONY : Group.o
@@ -402,12 +450,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... contacts_manager"
+	@echo "... DotFileExecutor.o"
+	@echo "... DotFileExecutor.i"
+	@echo "... DotFileExecutor.s"
 	@echo "... Exporter.o"
 	@echo "... Exporter.i"
 	@echo "... Exporter.s"
 	@echo "... Field.o"
 	@echo "... Field.i"
 	@echo "... Field.s"
+	@echo "... Grapher.o"
+	@echo "... Grapher.i"
+	@echo "... Grapher.s"
 	@echo "... Group.o"
 	@echo "... Group.i"
 	@echo "... Group.s"

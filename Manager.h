@@ -14,6 +14,7 @@
 #include "Translator.h"
 #include "Reportero.h"
 #include "Exporter.h"
+#include "Grapher.h"
 
 class Manager {
 private:
@@ -23,10 +24,15 @@ private:
     HashMap<Group>* groups;
     Translator* translator;
     Exporter* exporter;
+    Grapher* grapher;
 
     void terminal();
     void reportsMenu();
     void exportationMenu();
+    void generateGraphicsMenu();
+    void specificGraphMenu();
+
+    void treeGraphMenu();
 
 public:
     Manager();

@@ -10,6 +10,7 @@
 #include "Node.h"
 #include "TreeNode.h"
 #include "Exporter.h"
+#include "DotFileExecutor.h"
 
 template <class T>
 class TreeGraficator {
@@ -19,6 +20,8 @@ private:
     std::string* RED_COLOR = new std::string("red"), * BLUE_COLOR = new std::string("blue"), * BLACK_COLOR = new std::string("black");
 
     Exporter* exporter;
+    DotFileExecutor* dotFileExecutor;
+
     std::string createGraphNode(TreeNode<T>* node, std::string* &color){
         std::string code = *nameTree;
         code += std::to_string(numberNode);
@@ -33,6 +36,7 @@ private:
         code += "];\n";
         return code;
     };
+
     std::string codeGraphTreeNode(TreeNode<T>* node, bool hasFather, int numberFather, std::string* &color){
         int currentNode = numberNode;
         std::string code = createGraphNode(node, color);
@@ -59,6 +63,7 @@ public:
         exporter = new Exporter();
         numberNode = 0;
         nameTree = new std::string("");
+        dotFileExecutor = new DotFileExecutor();
     };
     void graficateTree(AVLtree<T>* tree, std::string nameGraph){
         numberNode = 0;
@@ -68,25 +73,7 @@ public:
             code += codeGraphTreeNode(raiz, false, 0, BLACK_COLOR);
         }
         code += "}";
-
-        std::string temporalFile = "../graph.dot";
-        std::ofstream file(temporalFile); // Crea un archivo DOT
-        if (!file.is_open()) {
-            std::cerr << "Error al abrir el archivo." << std::endl;
-        }
-        file << code << std::endl; // Comienza la definición del gráfico
-        file.close(); // Cierra el archivo
-
-        // Ejecuta Graphviz para generar la imagen del gráfico
-        std::string command = "dot -Tpng ";
-        command += temporalFile;
-        command += " -o ";
-        command += "../";
-        command += nameGraph;
-        command += ".png";
-        const char *commandChar = command.c_str();
-        system(commandChar);
-        remove("../graph.dot");
+        dotFileExecutor->generateImage(code, *Exporter::CURRENT_FOLDER, nameGraph);
     };
 
     std::string getCodeForTree(AVLtree<T>* tree){

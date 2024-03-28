@@ -14,6 +14,7 @@ Manager::Manager() {
     reportero = new Reportero(groups);
     translator = new Translator(groups, reportero);
     exporter = new Exporter();
+    grapher = new Grapher();
 }
 
 void Manager::showMenu() {
@@ -31,6 +32,7 @@ void Manager::showMenu() {
                 terminal();
                 break;
             case 2:
+                generateGraphicsMenu();
                 break;
             case 3:
                 reportsMenu();
@@ -128,4 +130,69 @@ void Manager::exportationMenu() {
             break;
         }
     } while (true);
+}
+
+void Manager::generateGraphicsMenu() {
+    bool running = true;
+    do{
+        util->clearConsole();
+        util->printSeparator();
+        std::cout<<"MENU DE GRAFICOS"<<std::endl;
+        util->printSeparator();
+        std::cout<<"Ingresa que tipo de grafico quieres exportar:"<<std::endl;
+        std::cout<<"    1->De toda la estructura\n    2->De un grupo\n    3->De una estructura especifica"<<std::endl;
+        std::cout<<"    4->Salir"<<std::endl;
+        int option = util->getNaturalNumber(1, 4);
+        switch (option) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                specificGraphMenu();
+                break;
+            default:
+                running = false;
+                break;
+        }
+    }while (running);
+}
+
+void Manager::specificGraphMenu() {
+    util->printSeparator();
+    std::cout<<"Ingresa que estructura deseas graficar:"<<std::endl;
+    std::cout<<"    1-HashTable de los grupos\n    2->HashTable de campos de un grupo especifico"<<std::endl;
+    std::cout<<"    3->ArbolAVL de un campo de un grupo\n    4->Salir"<<std::endl;
+    int option = util->getNaturalNumber(1,4);
+    switch (option) {
+        case 1:
+            //grapher->getGroupTableGrapher()->graficateHashTable("GROUPS", groups, true, "GROUPS_GRAPH");
+            break;
+        case 2:
+            break;
+        case 3:
+            treeGraphMenu();
+            break;
+        default: //salir de este menu
+            break;
+    }
+}
+
+void Manager::treeGraphMenu() {
+    std::cout << "Grupos existentes:" << std::endl;
+    groups->showExistentKeys();
+    std::cout << "\nEscribe el nombre del grupo a exportar:" << std::endl;
+    std::string *nameGroup = util->getLectura();
+    try {
+        HashContainer<Group> *containerGroup = this->groups->get(nameGroup);
+        Group *group = containerGroup->getContent();
+        std::cout << "\nIngresa el numero de campo para obtener el arbol AVL:" << std::endl;
+        std::cout << group->getFieldsAndTypes() << std::endl;
+        int fieldDefineName = util->getNaturalNumber(1, group->getFields()->getSize());
+        fieldDefineName--;
+        grapher->getTreeGrapher()->graficateTree(group->getHashTable()->get(
+                group->getFields()->get(fieldDefineName)->getContent()->getName())->getContent(), "ARBOL_");
+    } catch (const std::invalid_argument &e) {
+        std::cout << e.what() << std::endl;
+    }
 }

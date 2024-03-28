@@ -88,5 +88,13 @@ void Exporter::exportContactData(TreeNode<LinkedList<std::string>> *&treeNode, L
     }
 }
 
+std::string Exporter::getFileSeparator() {
+#ifdef _WIN32
+    return "\\";
+#else
+    return "/";
+#endif
+}
+
 
 
