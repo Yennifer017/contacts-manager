@@ -49,6 +49,7 @@ void Lexer::analiceChar(std::string* &text) {
     }else if(!reguex->isIgnoredCharacter(character)){
         std::string s(1, character);
         saveError(s);
+        current++;
     }else{
         current++;
     }
@@ -86,6 +87,8 @@ int Lexer::getTypeId(std::string *&read) {
         return static_cast<int>(TypeTkn::GROUP);
     }else if(read->compare("FIELDS") == 0){
         return static_cast<int>(TypeTkn::FIELDS);
+    }else if(read->compare("FIELD") == 0){
+        return static_cast<int>(TypeTkn::FIELD);
     }else if(read->compare("STRING") == 0){
         return static_cast<int>(TypeTkn::STRING_NAME);
     }else if(read->compare("INTEGER") == 0){

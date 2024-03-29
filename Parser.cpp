@@ -276,6 +276,12 @@ void Parser::validateFindStm() {
                 validateOneData();
                 status = 9;
                 break;
+            case 9:
+                if(type != static_cast<int>(TypeTkn::FIN_INSTRUCCION)){
+                    addError("Se esperaba un <<;>>");
+                }
+                status = 10;
+                break;
             default:
                 finished = true;
                 break;
@@ -284,7 +290,7 @@ void Parser::validateFindStm() {
             currentNode = currentNode->getNext();
         }
     } //end while
-    if(status != 9){
+    if(status != 10){
         addError("Find_group_statement incompleto / mal formado");
     }
 }
@@ -352,6 +358,7 @@ void Parser::validateCampsData() {
                 break;
             case 1:
                 if(type != static_cast<int>(TypeTkn::COMA)){
+                    currentNode = currentNode->getBefore();
                     status = 1;
                     running = false;
                 }else {
@@ -442,9 +449,6 @@ void Parser::validateOneData() {
             default:
                 addError("Se esperaba un dato");
                 break;
-        }
-        if(currentNode != nullptr){
-            currentNode = currentNode->getNext();
         }
     }else{
         addError("Se esperaba un dato");

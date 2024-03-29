@@ -10,7 +10,7 @@ std::string *Util::getLectura() {
     std::string lectura;
     printGetter();
     std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Limpiar el buffer de entrada
+    std::cin.ignore();
     std::getline(std::cin, lectura); // Leer toda la línea
     return new std::string(lectura);
 }
@@ -18,9 +18,7 @@ std::string *Util::getLectura() {
 void Util::enterContinue() {
     std::cout<<"Ingrese cualquier letra/numero para continuar\n";
     std::string lectura;
-    // Limpiar el buffer de entrada
     std::cin.clear();
-    //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Limpiar el buffer de entrada
     std::cin >> lectura;
     lectura.clear();
 }
@@ -44,7 +42,7 @@ int Util::getNumber() {
             return number;
         }
         catch (std::invalid_argument const &e) {
-            std::cout << "Numero invalido, intentalo otra vez: ";
+            std::cout << "Numero invalido, intentalo otra vez: " <<std::endl;
         }
         catch (std::out_of_range const &e) {
             std::cout << "Integer overflow error, ingresa un numero mas pequeno: ";
