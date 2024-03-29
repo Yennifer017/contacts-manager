@@ -38,4 +38,6 @@ add_executable(contacts_manager main.cpp
         DotFileExecutor.cpp
         DotFileExecutor.h
         Searcher.h
+        Parser.cpp
+        Parser.h
 )

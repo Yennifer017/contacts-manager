@@ -168,4 +168,22 @@ void Lexer::showTokens() {
     }
 }
 
+std::string Lexer::showErrors() {
+    if(errors->isEmpty()){
+        return "__sin errores__";
+    }else{
+        std::string errorsDisplay = "";
+        Node<std::string>* currentNode = errors->get(0);
+        while (currentNode != nullptr){
+            errorsDisplay += *currentNode->getContent() + "\n";
+            currentNode = currentNode->getNext();
+        }
+        return errorsDisplay;
+    }
+}
+
+LinkedList<std::string> *Lexer::getErrors() {
+    return this->errors;
+}
+
 

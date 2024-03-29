@@ -16,6 +16,7 @@ Manager::Manager() {
     exporter = new Exporter();
     grapher = new Grapher();
     GROUP_NAME = new std::string("GROUP");
+    parser = new Parser();
 }
 
 void Manager::showMenu() {
@@ -58,13 +59,15 @@ void Manager::terminal() {
             break;
         }
         LinkedList<Token>* tokens = lexer->analizar(instructions);
-        translator->translate(tokens);
-
-        /*std::cout<<"En la tabla principal de grupos:"<<std::endl;
-        groups->showKeys();
-        std::cout<<"En la tabla secundaria de cliente:"<<std::endl;
-        groups->get(new std::string("clientes"))->getContent()->getHashTable()->showKeys();*/
-
+        parser->analize(tokens);
+        if(lexer->getErrors()->isEmpty() && parser->getErrors()->isEmpty()){
+            translator->translate(tokens);
+        }else{
+            std::cout<<"ERRORES LEXICOS: \n";
+            std::cout<<lexer->showErrors()<<std::endl;
+            std::cout<<"\nERRORES SINTACTICOS: \n";
+            std::cout<<parser->getErrorsDisplay()<<std::endl;
+        }
         util->enterContinue();
     } while (true);
 

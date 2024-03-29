@@ -9,6 +9,7 @@ enum class TypeTkn {
     NEW = 2,
     GROUP = 3,
     FIELDS = 4,
+    FIELD = 23,
     /*typo de datos para especificar*/
     STRING_NAME = 5,
     INTEGER_NAME = 6,

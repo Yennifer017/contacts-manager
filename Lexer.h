@@ -36,6 +36,8 @@ public:
     void analiceChar(std::string* &text);
 
     void showTokens();
+    std::string showErrors();
+    LinkedList<std::string>* getErrors();
 };
 
 

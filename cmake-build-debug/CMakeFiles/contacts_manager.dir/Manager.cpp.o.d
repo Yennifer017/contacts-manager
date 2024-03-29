@@ -205,4 +205,5 @@ CMakeFiles/contacts_manager.dir/Manager.cpp.o: \
  /home/yennifer/Downloads/contacts-manager/Grapher.h \
  /home/yennifer/Downloads/contacts-manager/HashTableGrapher.h \
  /home/yennifer/Downloads/contacts-manager/DotFileExecutor.h \
- /home/yennifer/Downloads/contacts-manager/TreeGraficator.h
+ /home/yennifer/Downloads/contacts-manager/TreeGraficator.h \
+ /home/yennifer/Downloads/contacts-manager/Parser.h

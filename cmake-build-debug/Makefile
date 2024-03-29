@@ -297,6 +297,30 @@ Manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/Manager.cpp.s
 .PHONY : Manager.cpp.s
 
+Parser.o: Parser.cpp.o
+.PHONY : Parser.o
+
+# target to build an object file
+Parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/Parser.cpp.o
+.PHONY : Parser.cpp.o
+
+Parser.i: Parser.cpp.i
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contacts_manager.dir/build.make CMakeFiles/contacts_manager.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
+
 Reguex.o: Reguex.cpp.o
 .PHONY : Reguex.o
 
@@ -471,6 +495,9 @@ help:
 	@echo "... Manager.o"
 	@echo "... Manager.i"
 	@echo "... Manager.s"
+	@echo "... Parser.o"
+	@echo "... Parser.i"
+	@echo "... Parser.s"
 	@echo "... Reguex.o"
 	@echo "... Reguex.i"
 	@echo "... Reguex.s"

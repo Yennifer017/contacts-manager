@@ -15,6 +15,7 @@
 #include "Reportero.h"
 #include "Exporter.h"
 #include "Grapher.h"
+#include "Parser.h"
 
 class Manager {
 private:
@@ -26,6 +27,7 @@ private:
     Translator* translator;
     Exporter* exporter;
     Grapher* grapher;
+    Parser* parser;
 
     //principal functions menus
     void terminal();

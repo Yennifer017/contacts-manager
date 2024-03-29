@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/contacts_manager.dir/Lexer.cpp.o.d"
   "CMakeFiles/contacts_manager.dir/Manager.cpp.o"
   "CMakeFiles/contacts_manager.dir/Manager.cpp.o.d"
+  "CMakeFiles/contacts_manager.dir/Parser.cpp.o"
+  "CMakeFiles/contacts_manager.dir/Parser.cpp.o.d"
   "CMakeFiles/contacts_manager.dir/Reguex.cpp.o"
   "CMakeFiles/contacts_manager.dir/Reguex.cpp.o.d"
   "CMakeFiles/contacts_manager.dir/Reportero.cpp.o"
