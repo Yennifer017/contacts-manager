@@ -78,7 +78,7 @@ void Parser::validateAddStm() {
                     trying = true;
                     break;
             }
-            if(currentNode != nullptr){
+            if(currentNode != nullptr && trying){
                 currentNode = currentNode->getNext();
             }
         }
@@ -135,12 +135,13 @@ void Parser::validateAddContactStm() {
                     addError("Se esperaba <<;>>");
                 }
                 status = 8;
+                finished = true;
                 break;
             default:
                 finished = true;
                 break;
         }
-        if(currentNode != nullptr){
+        if(currentNode != nullptr && !finished){
             currentNode = currentNode->getNext();
         }
     } //end while
@@ -203,12 +204,13 @@ void Parser::validateAddGroupStm() {
                     addError("Se esperaba <<;>>");
                 }
                 status = 9;
+                finished = true;
                 break;
             default:
                 finished = true;
                 break;
         }
-        if(currentNode != nullptr){
+        if(currentNode != nullptr && !finished){
             currentNode = currentNode->getNext();
         }
 
@@ -281,12 +283,13 @@ void Parser::validateFindStm() {
                     addError("Se esperaba un <<;>>");
                 }
                 status = 10;
+                finished = true;
                 break;
             default:
                 finished = true;
                 break;
         }
-        if(currentNode != nullptr){
+        if(currentNode != nullptr && !finished){
             currentNode = currentNode->getNext();
         }
     } //end while
@@ -359,17 +362,15 @@ void Parser::validateCampsData() {
             case 1:
                 if(type != static_cast<int>(TypeTkn::COMA)){
                     currentNode = currentNode->getBefore();
-                    status = 1;
                     running = false;
-                }else {
-                    status = 0;
                 }
+                status = 0;
                 break;
             default:
                 running = false;
                 break;
         }
-        if(currentNode != nullptr){
+        if(currentNode != nullptr && running){
             currentNode = currentNode->getNext();
         }
     }
@@ -414,12 +415,13 @@ void Parser::validateDate() {
                     addError("Se esperaba un entero");
                 }
                 status = 5;
+                finished = true;
                 break;
             default:
                 finished = true;
                 break;
         }
-        if(currentNode != nullptr){
+        if(currentNode != nullptr && !finished){
             currentNode = currentNode->getNext();
         }
     } //end while
@@ -433,7 +435,8 @@ void Parser::validateOneData() {
         int type = currentNode->getContent()->getType();
         switch (type) {
             case static_cast<int>(TypeTkn::ENTERO):
-                if( (currentNode->getNext() != nullptr) && (currentNode->getContent()->getType() == static_cast<int>(TypeTkn::GUION)) ){
+                if( (currentNode->getNext() != nullptr) &&
+                    (currentNode->getNext()->getContent()->getType() == static_cast<int>(TypeTkn::GUION)) ){
                     validateDate();
                 }
                 break;

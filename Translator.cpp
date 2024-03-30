@@ -12,6 +12,7 @@ Translator::Translator(HashMap<Group> *&groups, Reportero* &_reportero) {
 
 void Translator::translate(LinkedList<Token>* &tokens) {
     Node<Token>* currentNode = tokens->get(0);
+    std::cout<<std::endl;
     while (currentNode != nullptr){
         switch (currentNode->getContent()->getType()) {
             case static_cast<int>(TypeTkn::ADD) :
@@ -43,8 +44,18 @@ std::string Translator::translateAddGroupStm(LinkedList<Token> *&tokens, Node<To
         }
     }
     current = current->getNext(); //para parar en el punto y coma
-    Group* group = new Group(fields);
-    groups->insert(nameGroup, group);
+    Group *group;
+    try {
+         group = new Group(fields);
+    }catch (const std::invalid_argument& e) {
+        throw std::invalid_argument("Se encontro un nombre de un campo repetido en <" + *nameGroup + "> No se pudo insertar");
+    }
+    try {
+        groups->insert(nameGroup, group);
+    }catch (const std::invalid_argument& e) {
+        delete(group);
+        throw std::invalid_argument("El grupo <" + *nameGroup + "> ya existe, no se pudo insertar");
+    }
     std::string result = "Grupo <" + *nameGroup + "> agregado exitosamente";
     return result;
 }
@@ -81,7 +92,7 @@ std::string Translator::translateAddContactStm(LinkedList<Token> *&tokens, Node<
     HashMap< AVLtree< LinkedList<std::string> > > *tableIformation = currentGroup->getHashTable();
     insertDataInTree(tableIformation, contactInformation, currentGroup->getFields());
     current = current->getNext(); //para parar en el punto y coma
-    return "contacto agregado exitosamente en " + *nameGroup;
+    return "Contacto agregado exitosamente en <" + *nameGroup + ">";
 }
 
 void Translator::translateAddInstructions(LinkedList<Token>* &tokens, Node<Token>* &currentNode) {
@@ -89,9 +100,10 @@ void Translator::translateAddInstructions(LinkedList<Token>* &tokens, Node<Token
         case static_cast<int>(TypeTkn::NEW):
             try {
                 std::string result = translateAddGroupStm(tokens, currentNode);
+                reportero->addLogAction(result);
                 std::cout<<result<<std::endl;
             }catch (const std::invalid_argument& e) {
-                std::cout<<"El nombre de un grupo que se desea ingresar ya existe"<<std::endl;
+                std::cout<<e.what()<<std::endl;
             }
             break;
         case static_cast<int>(TypeTkn::CONTACT):
@@ -116,7 +128,7 @@ LinkedList<std::string> *Translator::convertData(LinkedList<Field> *fields, Link
     Node<Field>* currentField = fields->get(0);
     Node<Token>* currenTkn = data->get(0);
     while (currentField != nullptr){
-        if(!currentField->getContent()->isCompatibleType(currenTkn->getContent()->getType())){
+        if(!currentField->getContent()->isCompatibleType(currenTkn->getContent()->getType(), currenTkn->getContent()->getLexema())){
             std::string error = "El dato de la instruccion <";
             error += *currenTkn->getContent()->getLexema();
             error += "> no concuerda en tipo";
@@ -146,21 +158,27 @@ std::string Translator::translateFindStm(LinkedList<Token> *&tokens, Node<Token>
     std::string result;
     current = current->getNext()->getNext()->getNext(); //apuntar a nombre del grupo
     try {
-        Group* group = groups->get(current->getContent()->getLexema())->getContent();
-        current = current->getNext()->getNext()->getNext()->getNext(); //apuntar a nombre del campo a buscar
-        AVLtree<LinkedList<std::string>>* tree = group->getHashTable()->get(current->getContent()->getLexema())->getContent();
-        current = current->getNext()->getNext(); //para apuntar al nombre del dato a buscar
+        std::string* nameGroup = current->getContent()->getLexema();
+        Group* group = groups->get(nameGroup)->getContent();
 
+        current = current->getNext()->getNext()->getNext()->getNext(); //apuntar a nombre del campo a buscar
+        std::string* nameField = current->getContent()->getLexema();
+        AVLtree<LinkedList<std::string>>* tree = group->getHashTable()->get(nameField)->getContent();
+
+        current = current->getNext()->getNext(); //para apuntar al nombre del dato a buscar
+        std::string* searchingFor = current->getContent()->getLexema();
         LinkedList<Field>* fields = group->getFields();
         auto* raiz = tree->getRaiz();
         if(!tree->isEmpty()){
-            result += findInformation(current->getContent()->getLexema(), fields, raiz);
+            result += findInformation(searchingFor, fields, raiz);
         }
+        reportero->addLogFindAction(nameGroup, nameField, searchingFor);
     }catch (const std::invalid_argument& e){
         result += e.what();
     }
-    result = result.empty() ? "__NO HAY INFORMACION PARA MOSTRAR__" : result;
-    return "Resultados de la busqueda:\n" + result + "\n --------------------------------------------\n\n";
+    result = result.empty() ? "__NO HAY INFORMACION PARA MOSTRAR__\n" : result;
+    return " --------------------------------------------\nResultados de la busqueda:\n"
+            +result + "\n --------------------------------------------\n";
 }
 
 std::string Translator::findInformation(std::string* key, LinkedList<Field>* &fieldsList, TreeNode<LinkedList<std::string>>* treeNode) {

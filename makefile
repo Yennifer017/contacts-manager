@@ -8,7 +8,7 @@ all: .all-post
 
 .all-post: AVLtree.o DotFileExecutor.o Exporter.o Field.o Grapher.o Group.o HashContainer.o HashMap.o HashTableGrapher.o Lexer.o LinkedList.o Manager.o Node.o Parser.o Reguex.o Reportero.o Searcher.o Token.o Translator.o TreeGraficator.o TreeNode.o TypeTkn.o Util.o main.o
 
-	$(CPP) AVLtree.o DotFileExecutor.o Exporter.o Field.o Grapher.o Group.o HashContainer.o HashMap.o HashTableGrapher.o Lexer.o LinkedList.o Manager.o Node.o Reguex.o Reportero.o Searcher.o Token.o Translator.o TreeGraficator.o TreeNode.o TypeTkn.o Util.o main.o -o $(TARGET)
+	$(CPP) AVLtree.o DotFileExecutor.o Exporter.o Field.o Grapher.o Group.o HashContainer.o HashMap.o HashTableGrapher.o Lexer.o LinkedList.o Manager.o Node.o Parser.o Reguex.o Reportero.o Searcher.o Token.o Translator.o TreeGraficator.o TreeNode.o TypeTkn.o Util.o main.o -o $(TARGET)
 
 AVLtree.o: AVLtree.h
 	touch AVLtree.o

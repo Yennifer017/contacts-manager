@@ -18,7 +18,7 @@ Group::Group(LinkedList<Field>* &fields) {
 void Group::initFields() {
     Node<Field>* currentFieldNode = fields->get(0);
     while (currentFieldNode != nullptr){
-        hashTable->insert(currentFieldNode->getContent()->getName(), new AVLtree< LinkedList<std::string>>());
+        hashTable->insert(currentFieldNode->getContent()->getName(), new AVLtree<LinkedList<std::string>>());
         currentFieldNode = currentFieldNode->getNext();
     }
 }

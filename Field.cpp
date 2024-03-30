@@ -18,14 +18,15 @@ Field::Field(std::string* name, int type) {
     this->type = type;
 }
 
-bool Field::isCompatibleType(int type) {
+bool Field::isCompatibleType(int type, std::string* lexema) {
     switch (this->type) {
         case static_cast<int>(TypeTkn::STRING_NAME):
             return type == static_cast<int>(TypeTkn::CADENA) || type == static_cast<int>(TypeTkn::ID);
         case static_cast<int>(TypeTkn::INTEGER_NAME):
             return type == static_cast<int>(TypeTkn::ENTERO);
         case static_cast<int>(TypeTkn::CHAR_NAME):
-            return type == static_cast<int>(TypeTkn::CARACTER);
+            return type == static_cast<int>(TypeTkn::CARACTER)
+                || ((type == static_cast<int>(TypeTkn::ID)) && (lexema->length() == 1)) ;
         case static_cast<int>(TypeTkn::DATE_NAME):
             return type == static_cast<int>(TypeTkn::FECHA);
         default:

@@ -91,11 +91,18 @@ std::string Reportero::getCurrentTime() {
 }
 void Reportero::addLogAction(std::string action) {
     std::string logTime = getCurrentTime(); // Convertir el tiempo a std::string
-    this->logReport += action +  " -- " + logTime + "\n";
+    this->logReport += action +  " -- " + logTime;
 }
 
 std::string Reportero::getLogInformation() {
     return "LOGS DEL SISTEMA \n" + (this->logReport.empty() ? "__sin informacion para mostrar__" : this->logReport);
+}
+
+void Reportero::addLogFindAction(std::string *nameGroup, std::string *nameField, std::string *searchingFor) {
+    std::string logTime = getCurrentTime(); // Convertir el tiempo a std::string
+    std::string registro = "Busqueda de <" + *searchingFor + "> realizada en el grupo <" + *nameGroup;
+    registro += ">, campo <" + *nameField + ">";
+    this->logReport += registro + " -- " + logTime;
 }
 
 

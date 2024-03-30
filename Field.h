@@ -15,7 +15,7 @@ public:
     Field(std::string* name, int type);
     std::string* getName();
     int getType();
-    bool isCompatibleType(int type);
+    bool isCompatibleType(int type, std::string* lexema);
 
     std::string getNameType();
 };

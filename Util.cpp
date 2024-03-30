@@ -65,7 +65,7 @@ int Util::getNaturalNumber(int min, int max) {
 }
 
 void Util::printSeparator() {
-    std::cout<<"-----------------------------------------------------------------------------------"<<std::endl;
+    std::cout<<"-----------------------------------------------------------"<<std::endl;
 }
 
 void Util::printGetter() {
