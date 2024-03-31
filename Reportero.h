@@ -23,6 +23,7 @@ public:
 
     void addLogAction(std::string  action);
     void addLogFindAction(std::string* nameGroup, std::string* nameField, std::string* searchingFor);
+    ~Reportero();
 };
 
 

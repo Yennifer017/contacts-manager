@@ -25,6 +25,7 @@ public:
     std::string* getKey(){
         return this->key;
     }
+    ~HashContainer(){};
 };
 
 

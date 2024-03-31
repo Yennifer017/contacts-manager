@@ -226,6 +226,8 @@ public:
         this->firstElement = nullptr;
         this->lastElement = nullptr;
     }
+
+    ~LinkedList(){};
 };
 
 

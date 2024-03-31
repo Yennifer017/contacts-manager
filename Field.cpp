@@ -48,3 +48,6 @@ std::string Field::getNameType() {
             return "UNKNOWN";
     }
 }
+
+Field::~Field() {
+}

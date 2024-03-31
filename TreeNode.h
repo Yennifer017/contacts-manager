@@ -91,6 +91,7 @@ public:
     void emptyFatherReference(){
         this->father = nullptr;
     }
+    ~TreeNode(){};
 };
 
 

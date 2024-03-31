@@ -71,3 +71,7 @@ void Util::printSeparator() {
 void Util::printGetter() {
     std::cout<<"      >>";
 }
+
+Util::~Util() {
+
+}

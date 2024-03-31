@@ -40,3 +40,7 @@ std::string Group::getFieldsAndTypes() {
     }
     return text;
 }
+
+Group::~Group() {
+
+}

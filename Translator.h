@@ -33,6 +33,7 @@ private:
 public:
     Translator(HashMap<Group>* &groups, Reportero* &_reportero);
     void translate(LinkedList<Token>* &tokens);
+    ~Translator();
 };
 
 

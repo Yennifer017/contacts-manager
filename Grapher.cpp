@@ -92,3 +92,7 @@ std::string Grapher::createNode(std::string name, std::string label) {
     code += "];\n";
     return code;
 }
+
+Grapher::~Grapher() {
+
+}

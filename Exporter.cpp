@@ -103,5 +103,8 @@ Exporter::Exporter() {
     numberFile = 0;
 }
 
+Exporter::~Exporter() {
+}
+
 
 

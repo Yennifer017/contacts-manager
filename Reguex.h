@@ -15,6 +15,7 @@ public:
     bool isAlphanumeric(char character);
     bool isReservedCharacter(char character);
     bool isIgnoredCharacter(char character);
+    ~Reguex();
 
 };
 

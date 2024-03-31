@@ -37,7 +37,13 @@ public:
     TreeNode<T>* find(std::string* keyToSearch, AVLtree<T>* &tree){
         return find(keyToSearch, tree->getRaiz());
     }
+    ~Searcher();
 };
+
+template<class T>
+Searcher<T>::~Searcher() {
+
+}
 
 
 #endif //CONTACTS_MANAGER_SEARCHER_H

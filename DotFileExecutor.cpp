@@ -25,3 +25,6 @@ void DotFileExecutor::generateImage(std::string code, std::string path, std::str
     system(commandChar);
     remove(temporalFile.c_str());
 }
+
+DotFileExecutor::~DotFileExecutor() {
+}

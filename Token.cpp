@@ -16,3 +16,7 @@ std::string *Token::getLexema() {
 int Token::getType() {
     return this->type;
 }
+
+Token::~Token() {
+
+}

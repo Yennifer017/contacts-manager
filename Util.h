@@ -16,6 +16,7 @@ public:
     int getNumber();
     int getNaturalNumber(int min, int max);
     void printSeparator();
+    ~Util();
 };
 
 

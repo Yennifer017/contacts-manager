@@ -189,6 +189,8 @@ public:
     TreeNode<T>* getRaiz(){
         return this->raiz;
     }
+    /*DESTRUCTOR*/
+    ~AVLtree(){};
 };
 
 

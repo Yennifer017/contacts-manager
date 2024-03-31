@@ -15,6 +15,7 @@ public:
     Token(std::string* &_lexema, int type);
     std::string* getLexema();
     int getType();
+    ~Token();
 };
 
 

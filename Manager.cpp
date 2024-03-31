@@ -249,3 +249,7 @@ void Manager::groupTableGraphMenu() {
     std::cout<<"La grafica debio generarse, nombre del archivo: "<<*GROUP_NAME<<std::endl;
     util->enterContinue();
 }
+
+Manager::~Manager() {
+
+}

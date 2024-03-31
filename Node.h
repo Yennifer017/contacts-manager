@@ -55,6 +55,7 @@ public:
     void setBefore(Node<T>* _before){
         this->before = _before;
     }
+    ~Node(){};
 };
 
 

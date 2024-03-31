@@ -30,6 +30,7 @@ public:
     void createDoc(std::string content, std::string name, std::string path, std::string* extension);
 
     void exportGroupData(HashContainer<Group>* &group, int fieldNumber);
+    ~Exporter();
 };
 
 

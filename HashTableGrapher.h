@@ -71,6 +71,8 @@ public:
         return this->nameHashTable;
     }
 
+    ~HashTableGrapher(){};
+
 };
 
 

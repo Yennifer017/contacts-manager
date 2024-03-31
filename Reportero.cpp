@@ -105,4 +105,8 @@ void Reportero::addLogFindAction(std::string *nameGroup, std::string *nameField,
     this->logReport += registro + " -- " + logTime;
 }
 
+Reportero::~Reportero() {
+
+}
+
 

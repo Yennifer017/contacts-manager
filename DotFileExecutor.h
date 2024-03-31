@@ -12,6 +12,7 @@
 class DotFileExecutor {
 public:
     void generateImage(std::string code, std::string path, std::string nameFile);
+    ~DotFileExecutor();
 };
 
 

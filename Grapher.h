@@ -30,6 +30,7 @@ public:
 
     std::string graphGroup(std::string* nameGroup, Group* group);
     std::string graphAll(std::string* namePrincipalGroup, HashMap<Group>* &groups);
+    ~Grapher();
 };
 
 

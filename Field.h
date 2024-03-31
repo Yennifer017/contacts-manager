@@ -18,6 +18,7 @@ public:
     bool isCompatibleType(int type, std::string* lexema);
 
     std::string getNameType();
+    ~Field();
 };
 
 

@@ -214,3 +214,7 @@ std::string Translator::findInformation(std::string* key, LinkedList<Field>* &fi
     return information;
 }
 
+Translator::~Translator() {
+
+}
+

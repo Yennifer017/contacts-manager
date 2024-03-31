@@ -462,4 +462,8 @@ LinkedList<std::string> *Parser::getErrors() {
     return this->errors;
 }
 
+Parser::~Parser() {
+
+}
+
 

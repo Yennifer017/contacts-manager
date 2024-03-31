@@ -36,6 +36,7 @@ public:
     void analize(LinkedList<Token>* tokens);
     std::string getErrorsDisplay();
     LinkedList<std::string>* getErrors();
+    ~Parser();
 
 };
 

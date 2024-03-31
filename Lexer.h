@@ -38,6 +38,7 @@ public:
     void showTokens();
     std::string showErrors();
     LinkedList<std::string>* getErrors();
+    ~Lexer();
 };
 
 

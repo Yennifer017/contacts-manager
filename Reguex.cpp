@@ -57,3 +57,7 @@ bool Reguex::isIgnoredCharacter(char character) {
 bool Reguex::isAlphanumeric(char character) {
     return this->isLetter(character) || this->isNumber(character);
 }
+
+Reguex::~Reguex() {
+
+}

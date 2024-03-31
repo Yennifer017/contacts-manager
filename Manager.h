@@ -46,6 +46,7 @@ private:
 public:
     Manager();
     void showMenu();
+    ~Manager();
 };
 
 

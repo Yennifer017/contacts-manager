@@ -21,6 +21,7 @@ public:
     LinkedList<Field>* getFields();
     HashMap< AVLtree<LinkedList<std::string>> >* getHashTable();
     std::string getFieldsAndTypes();
+    ~Group();
 };
 
 

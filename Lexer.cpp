@@ -189,4 +189,8 @@ LinkedList<std::string> *Lexer::getErrors() {
     return this->errors;
 }
 
+Lexer::~Lexer() {
+
+}
+
 
