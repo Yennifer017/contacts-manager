@@ -58,7 +58,7 @@ private:
             rightToNewCurrent->adjustWeight();
         }
         current->adjustWeight();
-        current = newCurrent; //TODO: REVISAR QUE ESTE BIEN
+        current = newCurrent;
     }
 
     void rotateRightLeft(TreeNode<T>* &current){
@@ -115,7 +115,7 @@ private:
             leftToNewCurrent->adjustWeight();
         }
         current->adjustWeight();
-        current = newCurrent; //TODO: REVISAR QUE ESTE BIEN
+        current = newCurrent;
     }
 
     void fixFatherReferences(TreeNode<T>* &current,TreeNode<T>* &newCurrent){

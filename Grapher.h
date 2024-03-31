@@ -17,6 +17,7 @@ private:
     TreeGraficator<LinkedList<std::string>>* treeGrapher;
 
     std::string getConnectCode(std::string *nameFather, std::string *nameChild);
+    std::string createNode(std::string name, std::string label);
 
     std::string getCodeOneGroup(std::string *nameGroup, HashMap<AVLtree<LinkedList<std::string>>>* &hashMapFields);
     std::string getCodeForAll(std::string* nameGroup, HashMap<Group>* &groups);

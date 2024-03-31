@@ -1,7 +1,7 @@
 #variable global de compilador de c++
 CPP = g++
 #definiendo el programa final
-TARGET = contacts_manager
+TARGET = contacts-manager
 
 #compilar el programa principal, se declaran las dependencias (todos los archivos)
 all: .all-post

@@ -17,8 +17,10 @@
 
 class Exporter {
 private:
+    int numberFile;
     void exportContactData(TreeNode<LinkedList<std::string>>* &treeNode, LinkedList<Field>* &fields,std::string* &pathFolder);
 public:
+    Exporter();
     static std::string* CURRENT_FOLDER;
     static std::string* TXT_EXTENSION;
     static std::string* GRAPHVIZ_EXTENSION;

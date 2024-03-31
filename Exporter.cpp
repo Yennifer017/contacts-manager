@@ -40,7 +40,7 @@ std::string Exporter::createDirectory(std::string* const name, std::string* cons
 
 void Exporter::createDoc(std::string content, std::string name, std::string path, std::string *extension) {
     // Crear un archivo de texto dentro de la carpeta
-    string filePath = path + "/" + name + *extension;
+    string filePath = path + Exporter::getFileSeparator() + name + *extension;
     ofstream outputFile(filePath);
     if (outputFile.is_open()) {
         outputFile << content << endl;
@@ -51,6 +51,7 @@ void Exporter::createDoc(std::string content, std::string name, std::string path
 }
 
 void Exporter::exportGroupData(HashContainer<Group>* &group, int fieldNumber) {
+    numberFile = 0;
     string pathDirectory = createDirectory(group->getKey(), CURRENT_FOLDER);
     std::string* path = new std::string(pathDirectory);
     LinkedList<Field>* fields = group->getContent()->getFields();
@@ -74,10 +75,12 @@ void Exporter::exportContactData(TreeNode<LinkedList<std::string>> *&treeNode, L
             nodeData = nodeData->getNext();
             nodeField = nodeField->getNext();
         }
-        createDoc(content, *treeNode->getKey(), *pathFolder, TXT_EXTENSION);
+        createDoc(content, *treeNode->getKey() + "_" + std::to_string(numberFile),
+                  *pathFolder, TXT_EXTENSION);
     }catch (const std::runtime_error& e){
         cout<<"No se pudo crear un archivo de un contacto: "<<*treeNode->getKey()<<std::endl;
     }
+    numberFile++;
     if(treeNode->getLeft() != nullptr){
         TreeNode<LinkedList<std::string>> * newNode = treeNode->getLeft();
         exportContactData(newNode, fields, pathFolder);
@@ -94,6 +97,10 @@ std::string Exporter::getFileSeparator() {
 #else
     return "/";
 #endif
+}
+
+Exporter::Exporter() {
+    numberFile = 0;
 }
 
 

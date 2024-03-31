@@ -53,7 +53,7 @@ std::string Grapher::getCodeOneGroup(std::string *nameGroup, HashMap<AVLtree<Lin
     code += fieldTableGrapher->getCodeGraphTable(nameGroup, hashMapFields, true);
     for (int i = 1; i <= hashMapFields->getSize(); ++i) {
         HashContainer<AVLtree<LinkedList<std::string>>>* hashContainer = hashMapFields->get(i - 1);
-        if(hashContainer != nullptr){
+        if(hashContainer != nullptr && !hashContainer->getContent()->isEmpty()){
             std::string nameNodesTree = *nameGroup + "_" + *hashContainer->getKey() + "_";
             treeGrapher->setNameTree(new std::string(nameNodesTree));
             code += treeGrapher->getCodeForTree(hashContainer->getContent());
@@ -61,7 +61,7 @@ std::string Grapher::getCodeOneGroup(std::string *nameGroup, HashMap<AVLtree<Lin
             std::string* fieldDotName = new std::string(*fieldTableGrapher->getNameHashTable() + std::to_string(i));
             std::string* treeDotName = new std::string(*treeGrapher->getNameTree() + std::to_string(0));
             code += getConnectCode(fieldDotName, treeDotName);
-        }
+        } //TODO: agregar que el arbol esta vacio
     };
     return code;
 }
@@ -81,5 +81,14 @@ std::string Grapher::getCodeForAll(std::string *nameGroup, HashMap<Group> *&grou
             code += getConnectCode(groupDotName, fieldTableName);
         }
     }
+    return code;
+}
+
+std::string Grapher::createNode(std::string name, std::string label) {
+    std::string code = name;
+    code += "[label=\"";
+    code += label;
+    code += "\"";
+    code += "];\n";
     return code;
 }

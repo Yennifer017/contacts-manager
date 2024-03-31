@@ -124,6 +124,7 @@ void Manager::exportationMenu() {
             int fieldDefineName = util->getNaturalNumber(1, group->getFields()->getSize());
             fieldDefineName--;
             exporter->exportGroupData(containerGroup, fieldDefineName);
+            std::cout<<"Exportacion completa"<<std::endl;
         } catch (const std::invalid_argument &e) {
             std::cout << e.what() << std::endl;
         }
