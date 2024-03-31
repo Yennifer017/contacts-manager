@@ -24,7 +24,8 @@ std::string Reportero::getTotalContactsPerGroup() {
                 reporte += 9;
                 reporte += "Cant. de contactos: ";
                 reporte +=  std::to_string(currentGroupCont->getContent()
-                                                   ->getHashTable()->getFirstNonNullData()->getContent()->getTotalElements());
+                        ->getHashTable()->get(currentGroupCont->getContent()->getFields()
+                        ->get(0)->getContent()->getName())->getContent()->getTotalElements());
                 reporte += "\n";
             }
         }
@@ -40,18 +41,20 @@ std::string Reportero::getInformationPerGroup() {
         for (int i = 0; i < groups->getSize(); ++i) {
             HashContainer<Group>* currentGroupCont = groups->get(i);
             if(currentGroupCont != nullptr){
+                LinkedList<Field>* fields = currentGroupCont->getContent()->getFields();
                 reporte += "  ->Nombre del grupo: ";
                 reporte += *currentGroupCont->getKey();
                 reporte += "\n    Total de campos de datos: ";
-                reporte += std::to_string(currentGroupCont->getContent()->getFields()->getSize());
+                reporte += std::to_string(fields->getSize());
                 reporte += "\n          ";
 
                 reporte += currentGroupCont->getContent()->getFieldsAndTypes();
 
                 reporte += "\n    Total de datos (todos los campos de contactos en los arboles): ";
-                reporte +=  std::to_string(currentGroupCont->getContent()
-                        ->getHashTable()->getFirstNonNullData()->getContent()->getTotalElements()
-                        * currentGroupCont->getContent()->getFields()->getSize());
+                HashContainer<AVLtree<LinkedList<std::string>>>* tableFields = currentGroupCont->getContent()->getHashTable()->get(fields->get(0)->getContent()->getName());
+                std::cout<<tableFields->getContent()->getTotalElements();
+                reporte +=  std::to_string(tableFields->getContent()->getTotalElements()
+                        * fields->getSize());
                 reporte += "\n\n * * * * * * * * * * * * * * * * * *\n";
             }
         }
@@ -71,7 +74,9 @@ std::string Reportero::getGlobalInformation() {
             HashContainer<Group>* currentGroupCont = groups->get(i);
             if(currentGroupCont != nullptr){
                 //sumando la cantidad de datos de los grupos
-                totalData += currentGroupCont->getContent()->getHashTable()->getFirstNonNullData()->getContent()->getTotalElements()
+                totalData += currentGroupCont->getContent()->getHashTable()->get(
+                        currentGroupCont->getContent()->getFields()->get(0)
+                        ->getContent()->getName())->getContent()->getTotalElements()
                         * currentGroupCont->getContent()->getFields()->getSize();
             }
         }

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yennifer/Downloads/contacts-manager/cmake-build-debug"
+			"value" : "/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yennifer/Downloads/contacts-manager"
+			"value" : "/home/yennifer/Documents/clion-projects/contacts-manager"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1283,7 +1283,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yennifer/Downloads/contacts-manager/cmake-build-debug"
+			"value" : "/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug"
 		},
 		{
 			"name" : "contacts_manager_IS_TOP_LEVEL",
@@ -1307,7 +1307,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yennifer/Downloads/contacts-manager"
+			"value" : "/home/yennifer/Documents/clion-projects/contacts-manager"
 		}
 	],
 	"kind" : "cache",

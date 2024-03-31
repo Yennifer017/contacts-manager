@@ -1,5 +1,5 @@
 CMakeFiles/contacts_manager.dir/Lexer.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Lexer.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Lexer.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -150,9 +150,9 @@ CMakeFiles/contacts_manager.dir/Lexer.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/yennifer/Downloads/contacts-manager/Lexer.h \
- /home/yennifer/Downloads/contacts-manager/LinkedList.h \
- /home/yennifer/Downloads/contacts-manager/Node.h \
- /home/yennifer/Downloads/contacts-manager/Token.h \
- /home/yennifer/Downloads/contacts-manager/Reguex.h \
- /home/yennifer/Downloads/contacts-manager/TypeTkn.h
+ /home/yennifer/Documents/clion-projects/contacts-manager/Lexer.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/LinkedList.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Node.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Token.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Reguex.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TypeTkn.h

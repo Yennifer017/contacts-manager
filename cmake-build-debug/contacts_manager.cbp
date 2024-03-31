@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option working_dir="/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="contacts_manager">
-				<Option output="/home/yennifer/Downloads/contacts-manager/cmake-build-debug/contacts_manager" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option output="/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/contacts_manager" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 contacts_manager"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 contacts_manager"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="contacts_manager/fast">
-				<Option output="/home/yennifer/Downloads/contacts-manager/cmake-build-debug/contacts_manager" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option output="/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/contacts_manager" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,145 +55,145 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 contacts_manager/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 contacts_manager/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option working_dir="/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/yennifer/Downloads/contacts-manager/cmake-build-debug"/>
+				<Option working_dir="/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Downloads/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/AVLtree.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/AVLtree.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/DotFileExecutor.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Exporter.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Exporter.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Exporter.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Exporter.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Field.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Field.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Field.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Field.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Grapher.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Grapher.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Grapher.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Grapher.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Group.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Group.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Group.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Group.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/HashContainer.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/HashContainer.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/HashMap.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/HashMap.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/HashTableGrapher.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/HashTableGrapher.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Lexer.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Lexer.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Lexer.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Lexer.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/LinkedList.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/LinkedList.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Manager.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Manager.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Manager.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Manager.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Node.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Node.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Parser.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Parser.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Parser.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Parser.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Reguex.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Reguex.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Reguex.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Reguex.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Reportero.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Reportero.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Reportero.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Reportero.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Searcher.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Searcher.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Token.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Token.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Token.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Token.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Translator.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Translator.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Translator.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Translator.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/TreeGraficator.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/TreeGraficator.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/TreeNode.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/TreeNode.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/TypeTkn.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/TypeTkn.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Util.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Util.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/Util.h">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/Util.h">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/main.cpp">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/main.cpp">
 			<Option target="contacts_manager"/>
 		</Unit>
-		<Unit filename="/home/yennifer/Downloads/contacts-manager/CMakeLists.txt">
+		<Unit filename="/home/yennifer/Documents/clion-projects/contacts-manager/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

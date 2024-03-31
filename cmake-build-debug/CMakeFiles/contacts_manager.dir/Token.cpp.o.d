@@ -1,7 +1,7 @@
 CMakeFiles/contacts_manager.dir/Token.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Token.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Token.cpp \
  /usr/include/stdc-predef.h \
- /home/yennifer/Downloads/contacts-manager/Token.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Token.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

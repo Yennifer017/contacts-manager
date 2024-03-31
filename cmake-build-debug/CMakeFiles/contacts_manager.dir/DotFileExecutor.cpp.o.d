@@ -1,7 +1,7 @@
 CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.cpp \
  /usr/include/stdc-predef.h \
- /home/yennifer/Downloads/contacts-manager/DotFileExecutor.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -156,7 +156,7 @@ CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream \
- /home/yennifer/Downloads/contacts-manager/Exporter.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Exporter.h \
  /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -179,11 +179,11 @@ CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: \
  /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
- /home/yennifer/Downloads/contacts-manager/HashContainer.h \
- /home/yennifer/Downloads/contacts-manager/Group.h \
- /home/yennifer/Downloads/contacts-manager/LinkedList.h \
- /home/yennifer/Downloads/contacts-manager/Node.h \
- /home/yennifer/Downloads/contacts-manager/Field.h \
- /home/yennifer/Downloads/contacts-manager/HashMap.h \
- /home/yennifer/Downloads/contacts-manager/AVLtree.h \
- /home/yennifer/Downloads/contacts-manager/TreeNode.h
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashContainer.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Group.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/LinkedList.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Node.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Field.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashMap.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/AVLtree.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TreeNode.h

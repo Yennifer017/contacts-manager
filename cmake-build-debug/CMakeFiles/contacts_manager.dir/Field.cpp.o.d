@@ -1,7 +1,7 @@
 CMakeFiles/contacts_manager.dir/Field.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Field.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Field.cpp \
  /usr/include/stdc-predef.h \
- /home/yennifer/Downloads/contacts-manager/Field.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Field.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,4 +116,4 @@ CMakeFiles/contacts_manager.dir/Field.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/yennifer/Downloads/contacts-manager/TypeTkn.h
+ /home/yennifer/Documents/clion-projects/contacts-manager/TypeTkn.h

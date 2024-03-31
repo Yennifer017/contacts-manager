@@ -174,6 +174,7 @@ void Manager::groupGraphMenu() {
     std::cout << "\nEscribe el nombre del grupo para graficar completo:" << std::endl;
     std::string *nameGroup = util->getLectura();
     try {
+        //TODO AQUI HAY UN BUG
         std::cout<<"Archivo generado: "<<grapher->graphGroup(nameGroup, this->groups->get(nameGroup)->getContent())<<std::endl;
     } catch (const std::invalid_argument &e) {
         std::cout << e.what() << std::endl;

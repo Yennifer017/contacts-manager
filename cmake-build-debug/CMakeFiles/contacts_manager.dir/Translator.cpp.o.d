@@ -1,9 +1,9 @@
 CMakeFiles/contacts_manager.dir/Translator.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Translator.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Translator.cpp \
  /usr/include/stdc-predef.h \
- /home/yennifer/Downloads/contacts-manager/Translator.h \
- /home/yennifer/Downloads/contacts-manager/HashMap.h \
- /home/yennifer/Downloads/contacts-manager/HashContainer.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Translator.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashMap.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashContainer.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -155,13 +155,13 @@ CMakeFiles/contacts_manager.dir/Translator.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/yennifer/Downloads/contacts-manager/Group.h \
- /home/yennifer/Downloads/contacts-manager/LinkedList.h \
- /home/yennifer/Downloads/contacts-manager/Node.h \
- /home/yennifer/Downloads/contacts-manager/Field.h \
- /home/yennifer/Downloads/contacts-manager/AVLtree.h \
- /home/yennifer/Downloads/contacts-manager/TreeNode.h \
- /home/yennifer/Downloads/contacts-manager/Token.h \
- /home/yennifer/Downloads/contacts-manager/TypeTkn.h \
- /home/yennifer/Downloads/contacts-manager/Reportero.h \
- /home/yennifer/Downloads/contacts-manager/Searcher.h
+ /home/yennifer/Documents/clion-projects/contacts-manager/Group.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/LinkedList.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Node.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Field.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/AVLtree.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TreeNode.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Token.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TypeTkn.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Reportero.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Searcher.h

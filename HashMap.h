@@ -44,7 +44,7 @@ private:
                 trying = false;
             } else if (currentContFromT->getKey()->compare(*content->getKey()) == 0) {
                 throw std::invalid_argument("La clave" + *content->getKey() + "esta repetida, no se pudo insertar");
-            } else if (currentContFromT->getKey() != content->getKey()) {
+            } else if (currentContFromT->getKey()->compare(*content->getKey()) != 0) {
                 index++;
                 index = index>=sizeTable? 0: index;
                 trying = true;

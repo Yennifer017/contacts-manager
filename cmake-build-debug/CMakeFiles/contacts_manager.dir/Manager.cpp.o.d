@@ -1,5 +1,5 @@
 CMakeFiles/contacts_manager.dir/Manager.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Manager.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Manager.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/string \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -159,24 +159,24 @@ CMakeFiles/contacts_manager.dir/Manager.cpp.o: \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/yennifer/Downloads/contacts-manager/Manager.h \
- /home/yennifer/Downloads/contacts-manager/Util.h \
- /home/yennifer/Downloads/contacts-manager/LinkedList.h \
- /home/yennifer/Downloads/contacts-manager/Node.h \
- /home/yennifer/Downloads/contacts-manager/Token.h \
- /home/yennifer/Downloads/contacts-manager/Lexer.h \
- /home/yennifer/Downloads/contacts-manager/Reguex.h \
- /home/yennifer/Downloads/contacts-manager/HashMap.h \
- /home/yennifer/Downloads/contacts-manager/HashContainer.h \
- /home/yennifer/Downloads/contacts-manager/Group.h \
- /home/yennifer/Downloads/contacts-manager/Field.h \
- /home/yennifer/Downloads/contacts-manager/AVLtree.h \
- /home/yennifer/Downloads/contacts-manager/TreeNode.h \
- /home/yennifer/Downloads/contacts-manager/Translator.h \
- /home/yennifer/Downloads/contacts-manager/TypeTkn.h \
- /home/yennifer/Downloads/contacts-manager/Reportero.h \
- /home/yennifer/Downloads/contacts-manager/Searcher.h \
- /home/yennifer/Downloads/contacts-manager/Exporter.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Manager.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Util.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/LinkedList.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Node.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Token.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Lexer.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Reguex.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashMap.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashContainer.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Group.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Field.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/AVLtree.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TreeNode.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Translator.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TypeTkn.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Reportero.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Searcher.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Exporter.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
@@ -202,8 +202,8 @@ CMakeFiles/contacts_manager.dir/Manager.cpp.o: \
  /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
- /home/yennifer/Downloads/contacts-manager/Grapher.h \
- /home/yennifer/Downloads/contacts-manager/HashTableGrapher.h \
- /home/yennifer/Downloads/contacts-manager/DotFileExecutor.h \
- /home/yennifer/Downloads/contacts-manager/TreeGraficator.h \
- /home/yennifer/Downloads/contacts-manager/Parser.h
+ /home/yennifer/Documents/clion-projects/contacts-manager/Grapher.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashTableGrapher.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TreeGraficator.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Parser.h

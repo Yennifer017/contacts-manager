@@ -1,4 +1,4 @@
 CMakeFiles/contacts_manager.dir/Reguex.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Reguex.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Reguex.cpp \
  /usr/include/stdc-predef.h \
- /home/yennifer/Downloads/contacts-manager/Reguex.h
+ /home/yennifer/Documents/clion-projects/contacts-manager/Reguex.h

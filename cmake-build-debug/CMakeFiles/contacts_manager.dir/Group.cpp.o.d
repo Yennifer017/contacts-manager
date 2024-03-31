@@ -1,9 +1,9 @@
 CMakeFiles/contacts_manager.dir/Group.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Group.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Group.cpp \
  /usr/include/stdc-predef.h \
- /home/yennifer/Downloads/contacts-manager/Group.h \
- /home/yennifer/Downloads/contacts-manager/LinkedList.h \
- /home/yennifer/Downloads/contacts-manager/Node.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Group.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/LinkedList.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Node.h \
  /usr/include/c++/13/stdexcept /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -123,9 +123,9 @@ CMakeFiles/contacts_manager.dir/Group.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/yennifer/Downloads/contacts-manager/Field.h \
- /home/yennifer/Downloads/contacts-manager/HashMap.h \
- /home/yennifer/Downloads/contacts-manager/HashContainer.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Field.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashMap.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/HashContainer.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/ext/atomicity.h \
@@ -159,5 +159,5 @@ CMakeFiles/contacts_manager.dir/Group.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/yennifer/Downloads/contacts-manager/AVLtree.h \
- /home/yennifer/Downloads/contacts-manager/TreeNode.h
+ /home/yennifer/Documents/clion-projects/contacts-manager/AVLtree.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TreeNode.h

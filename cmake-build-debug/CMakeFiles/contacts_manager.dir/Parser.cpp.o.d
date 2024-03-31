@@ -1,9 +1,9 @@
 CMakeFiles/contacts_manager.dir/Parser.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Parser.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Parser.cpp \
  /usr/include/stdc-predef.h \
- /home/yennifer/Downloads/contacts-manager/Parser.h \
- /home/yennifer/Downloads/contacts-manager/LinkedList.h \
- /home/yennifer/Downloads/contacts-manager/Node.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Parser.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/LinkedList.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Node.h \
  /usr/include/c++/13/stdexcept /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -123,5 +123,5 @@ CMakeFiles/contacts_manager.dir/Parser.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/yennifer/Downloads/contacts-manager/Token.h \
- /home/yennifer/Downloads/contacts-manager/TypeTkn.h
+ /home/yennifer/Documents/clion-projects/contacts-manager/Token.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/TypeTkn.h

@@ -53,10 +53,10 @@ RM = /snap/clion/265/bin/cmake/linux/x64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yennifer/Downloads/contacts-manager
+CMAKE_SOURCE_DIR = /home/yennifer/Documents/clion-projects/contacts-manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yennifer/Downloads/contacts-manager/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/contacts_manager.dir/depend.make
@@ -70,200 +70,200 @@ include CMakeFiles/contacts_manager.dir/progress.make
 include CMakeFiles/contacts_manager.dir/flags.make
 
 CMakeFiles/contacts_manager.dir/main.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/main.cpp.o: /home/yennifer/Downloads/contacts-manager/main.cpp
+CMakeFiles/contacts_manager.dir/main.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/main.cpp
 CMakeFiles/contacts_manager.dir/main.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/contacts_manager.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/main.cpp.o -MF CMakeFiles/contacts_manager.dir/main.cpp.o.d -o CMakeFiles/contacts_manager.dir/main.cpp.o -c /home/yennifer/Downloads/contacts-manager/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/contacts_manager.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/main.cpp.o -MF CMakeFiles/contacts_manager.dir/main.cpp.o.d -o CMakeFiles/contacts_manager.dir/main.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/main.cpp
 
 CMakeFiles/contacts_manager.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/main.cpp > CMakeFiles/contacts_manager.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/main.cpp > CMakeFiles/contacts_manager.dir/main.cpp.i
 
 CMakeFiles/contacts_manager.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/main.cpp -o CMakeFiles/contacts_manager.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/main.cpp -o CMakeFiles/contacts_manager.dir/main.cpp.s
 
 CMakeFiles/contacts_manager.dir/Token.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Token.cpp.o: /home/yennifer/Downloads/contacts-manager/Token.cpp
+CMakeFiles/contacts_manager.dir/Token.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Token.cpp
 CMakeFiles/contacts_manager.dir/Token.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/contacts_manager.dir/Token.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Token.cpp.o -MF CMakeFiles/contacts_manager.dir/Token.cpp.o.d -o CMakeFiles/contacts_manager.dir/Token.cpp.o -c /home/yennifer/Downloads/contacts-manager/Token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/contacts_manager.dir/Token.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Token.cpp.o -MF CMakeFiles/contacts_manager.dir/Token.cpp.o.d -o CMakeFiles/contacts_manager.dir/Token.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Token.cpp
 
 CMakeFiles/contacts_manager.dir/Token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Token.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Token.cpp > CMakeFiles/contacts_manager.dir/Token.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Token.cpp > CMakeFiles/contacts_manager.dir/Token.cpp.i
 
 CMakeFiles/contacts_manager.dir/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Token.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Token.cpp -o CMakeFiles/contacts_manager.dir/Token.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Token.cpp -o CMakeFiles/contacts_manager.dir/Token.cpp.s
 
 CMakeFiles/contacts_manager.dir/Reguex.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Reguex.cpp.o: /home/yennifer/Downloads/contacts-manager/Reguex.cpp
+CMakeFiles/contacts_manager.dir/Reguex.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Reguex.cpp
 CMakeFiles/contacts_manager.dir/Reguex.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/contacts_manager.dir/Reguex.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Reguex.cpp.o -MF CMakeFiles/contacts_manager.dir/Reguex.cpp.o.d -o CMakeFiles/contacts_manager.dir/Reguex.cpp.o -c /home/yennifer/Downloads/contacts-manager/Reguex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/contacts_manager.dir/Reguex.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Reguex.cpp.o -MF CMakeFiles/contacts_manager.dir/Reguex.cpp.o.d -o CMakeFiles/contacts_manager.dir/Reguex.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Reguex.cpp
 
 CMakeFiles/contacts_manager.dir/Reguex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Reguex.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Reguex.cpp > CMakeFiles/contacts_manager.dir/Reguex.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Reguex.cpp > CMakeFiles/contacts_manager.dir/Reguex.cpp.i
 
 CMakeFiles/contacts_manager.dir/Reguex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Reguex.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Reguex.cpp -o CMakeFiles/contacts_manager.dir/Reguex.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Reguex.cpp -o CMakeFiles/contacts_manager.dir/Reguex.cpp.s
 
 CMakeFiles/contacts_manager.dir/Lexer.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Lexer.cpp.o: /home/yennifer/Downloads/contacts-manager/Lexer.cpp
+CMakeFiles/contacts_manager.dir/Lexer.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Lexer.cpp
 CMakeFiles/contacts_manager.dir/Lexer.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/contacts_manager.dir/Lexer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Lexer.cpp.o -MF CMakeFiles/contacts_manager.dir/Lexer.cpp.o.d -o CMakeFiles/contacts_manager.dir/Lexer.cpp.o -c /home/yennifer/Downloads/contacts-manager/Lexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/contacts_manager.dir/Lexer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Lexer.cpp.o -MF CMakeFiles/contacts_manager.dir/Lexer.cpp.o.d -o CMakeFiles/contacts_manager.dir/Lexer.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Lexer.cpp
 
 CMakeFiles/contacts_manager.dir/Lexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Lexer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Lexer.cpp > CMakeFiles/contacts_manager.dir/Lexer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Lexer.cpp > CMakeFiles/contacts_manager.dir/Lexer.cpp.i
 
 CMakeFiles/contacts_manager.dir/Lexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Lexer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Lexer.cpp -o CMakeFiles/contacts_manager.dir/Lexer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Lexer.cpp -o CMakeFiles/contacts_manager.dir/Lexer.cpp.s
 
 CMakeFiles/contacts_manager.dir/Util.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Util.cpp.o: /home/yennifer/Downloads/contacts-manager/Util.cpp
+CMakeFiles/contacts_manager.dir/Util.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Util.cpp
 CMakeFiles/contacts_manager.dir/Util.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/contacts_manager.dir/Util.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Util.cpp.o -MF CMakeFiles/contacts_manager.dir/Util.cpp.o.d -o CMakeFiles/contacts_manager.dir/Util.cpp.o -c /home/yennifer/Downloads/contacts-manager/Util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/contacts_manager.dir/Util.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Util.cpp.o -MF CMakeFiles/contacts_manager.dir/Util.cpp.o.d -o CMakeFiles/contacts_manager.dir/Util.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Util.cpp
 
 CMakeFiles/contacts_manager.dir/Util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Util.cpp > CMakeFiles/contacts_manager.dir/Util.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Util.cpp > CMakeFiles/contacts_manager.dir/Util.cpp.i
 
 CMakeFiles/contacts_manager.dir/Util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Util.cpp -o CMakeFiles/contacts_manager.dir/Util.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Util.cpp -o CMakeFiles/contacts_manager.dir/Util.cpp.s
 
 CMakeFiles/contacts_manager.dir/Exporter.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Exporter.cpp.o: /home/yennifer/Downloads/contacts-manager/Exporter.cpp
+CMakeFiles/contacts_manager.dir/Exporter.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Exporter.cpp
 CMakeFiles/contacts_manager.dir/Exporter.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/contacts_manager.dir/Exporter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Exporter.cpp.o -MF CMakeFiles/contacts_manager.dir/Exporter.cpp.o.d -o CMakeFiles/contacts_manager.dir/Exporter.cpp.o -c /home/yennifer/Downloads/contacts-manager/Exporter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/contacts_manager.dir/Exporter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Exporter.cpp.o -MF CMakeFiles/contacts_manager.dir/Exporter.cpp.o.d -o CMakeFiles/contacts_manager.dir/Exporter.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Exporter.cpp
 
 CMakeFiles/contacts_manager.dir/Exporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Exporter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Exporter.cpp > CMakeFiles/contacts_manager.dir/Exporter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Exporter.cpp > CMakeFiles/contacts_manager.dir/Exporter.cpp.i
 
 CMakeFiles/contacts_manager.dir/Exporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Exporter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Exporter.cpp -o CMakeFiles/contacts_manager.dir/Exporter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Exporter.cpp -o CMakeFiles/contacts_manager.dir/Exporter.cpp.s
 
 CMakeFiles/contacts_manager.dir/Manager.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Manager.cpp.o: /home/yennifer/Downloads/contacts-manager/Manager.cpp
+CMakeFiles/contacts_manager.dir/Manager.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Manager.cpp
 CMakeFiles/contacts_manager.dir/Manager.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/contacts_manager.dir/Manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Manager.cpp.o -MF CMakeFiles/contacts_manager.dir/Manager.cpp.o.d -o CMakeFiles/contacts_manager.dir/Manager.cpp.o -c /home/yennifer/Downloads/contacts-manager/Manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/contacts_manager.dir/Manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Manager.cpp.o -MF CMakeFiles/contacts_manager.dir/Manager.cpp.o.d -o CMakeFiles/contacts_manager.dir/Manager.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Manager.cpp
 
 CMakeFiles/contacts_manager.dir/Manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Manager.cpp > CMakeFiles/contacts_manager.dir/Manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Manager.cpp > CMakeFiles/contacts_manager.dir/Manager.cpp.i
 
 CMakeFiles/contacts_manager.dir/Manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Manager.cpp -o CMakeFiles/contacts_manager.dir/Manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Manager.cpp -o CMakeFiles/contacts_manager.dir/Manager.cpp.s
 
 CMakeFiles/contacts_manager.dir/Group.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Group.cpp.o: /home/yennifer/Downloads/contacts-manager/Group.cpp
+CMakeFiles/contacts_manager.dir/Group.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Group.cpp
 CMakeFiles/contacts_manager.dir/Group.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/contacts_manager.dir/Group.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Group.cpp.o -MF CMakeFiles/contacts_manager.dir/Group.cpp.o.d -o CMakeFiles/contacts_manager.dir/Group.cpp.o -c /home/yennifer/Downloads/contacts-manager/Group.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/contacts_manager.dir/Group.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Group.cpp.o -MF CMakeFiles/contacts_manager.dir/Group.cpp.o.d -o CMakeFiles/contacts_manager.dir/Group.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Group.cpp
 
 CMakeFiles/contacts_manager.dir/Group.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Group.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Group.cpp > CMakeFiles/contacts_manager.dir/Group.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Group.cpp > CMakeFiles/contacts_manager.dir/Group.cpp.i
 
 CMakeFiles/contacts_manager.dir/Group.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Group.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Group.cpp -o CMakeFiles/contacts_manager.dir/Group.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Group.cpp -o CMakeFiles/contacts_manager.dir/Group.cpp.s
 
 CMakeFiles/contacts_manager.dir/Field.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Field.cpp.o: /home/yennifer/Downloads/contacts-manager/Field.cpp
+CMakeFiles/contacts_manager.dir/Field.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Field.cpp
 CMakeFiles/contacts_manager.dir/Field.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/contacts_manager.dir/Field.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Field.cpp.o -MF CMakeFiles/contacts_manager.dir/Field.cpp.o.d -o CMakeFiles/contacts_manager.dir/Field.cpp.o -c /home/yennifer/Downloads/contacts-manager/Field.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/contacts_manager.dir/Field.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Field.cpp.o -MF CMakeFiles/contacts_manager.dir/Field.cpp.o.d -o CMakeFiles/contacts_manager.dir/Field.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Field.cpp
 
 CMakeFiles/contacts_manager.dir/Field.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Field.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Field.cpp > CMakeFiles/contacts_manager.dir/Field.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Field.cpp > CMakeFiles/contacts_manager.dir/Field.cpp.i
 
 CMakeFiles/contacts_manager.dir/Field.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Field.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Field.cpp -o CMakeFiles/contacts_manager.dir/Field.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Field.cpp -o CMakeFiles/contacts_manager.dir/Field.cpp.s
 
 CMakeFiles/contacts_manager.dir/Translator.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Translator.cpp.o: /home/yennifer/Downloads/contacts-manager/Translator.cpp
+CMakeFiles/contacts_manager.dir/Translator.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Translator.cpp
 CMakeFiles/contacts_manager.dir/Translator.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/contacts_manager.dir/Translator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Translator.cpp.o -MF CMakeFiles/contacts_manager.dir/Translator.cpp.o.d -o CMakeFiles/contacts_manager.dir/Translator.cpp.o -c /home/yennifer/Downloads/contacts-manager/Translator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/contacts_manager.dir/Translator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Translator.cpp.o -MF CMakeFiles/contacts_manager.dir/Translator.cpp.o.d -o CMakeFiles/contacts_manager.dir/Translator.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Translator.cpp
 
 CMakeFiles/contacts_manager.dir/Translator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Translator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Translator.cpp > CMakeFiles/contacts_manager.dir/Translator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Translator.cpp > CMakeFiles/contacts_manager.dir/Translator.cpp.i
 
 CMakeFiles/contacts_manager.dir/Translator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Translator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Translator.cpp -o CMakeFiles/contacts_manager.dir/Translator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Translator.cpp -o CMakeFiles/contacts_manager.dir/Translator.cpp.s
 
 CMakeFiles/contacts_manager.dir/Reportero.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Reportero.cpp.o: /home/yennifer/Downloads/contacts-manager/Reportero.cpp
+CMakeFiles/contacts_manager.dir/Reportero.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Reportero.cpp
 CMakeFiles/contacts_manager.dir/Reportero.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/contacts_manager.dir/Reportero.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Reportero.cpp.o -MF CMakeFiles/contacts_manager.dir/Reportero.cpp.o.d -o CMakeFiles/contacts_manager.dir/Reportero.cpp.o -c /home/yennifer/Downloads/contacts-manager/Reportero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/contacts_manager.dir/Reportero.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Reportero.cpp.o -MF CMakeFiles/contacts_manager.dir/Reportero.cpp.o.d -o CMakeFiles/contacts_manager.dir/Reportero.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Reportero.cpp
 
 CMakeFiles/contacts_manager.dir/Reportero.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Reportero.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Reportero.cpp > CMakeFiles/contacts_manager.dir/Reportero.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Reportero.cpp > CMakeFiles/contacts_manager.dir/Reportero.cpp.i
 
 CMakeFiles/contacts_manager.dir/Reportero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Reportero.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Reportero.cpp -o CMakeFiles/contacts_manager.dir/Reportero.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Reportero.cpp -o CMakeFiles/contacts_manager.dir/Reportero.cpp.s
 
 CMakeFiles/contacts_manager.dir/Grapher.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Grapher.cpp.o: /home/yennifer/Downloads/contacts-manager/Grapher.cpp
+CMakeFiles/contacts_manager.dir/Grapher.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Grapher.cpp
 CMakeFiles/contacts_manager.dir/Grapher.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/contacts_manager.dir/Grapher.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Grapher.cpp.o -MF CMakeFiles/contacts_manager.dir/Grapher.cpp.o.d -o CMakeFiles/contacts_manager.dir/Grapher.cpp.o -c /home/yennifer/Downloads/contacts-manager/Grapher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/contacts_manager.dir/Grapher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Grapher.cpp.o -MF CMakeFiles/contacts_manager.dir/Grapher.cpp.o.d -o CMakeFiles/contacts_manager.dir/Grapher.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Grapher.cpp
 
 CMakeFiles/contacts_manager.dir/Grapher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Grapher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Grapher.cpp > CMakeFiles/contacts_manager.dir/Grapher.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Grapher.cpp > CMakeFiles/contacts_manager.dir/Grapher.cpp.i
 
 CMakeFiles/contacts_manager.dir/Grapher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Grapher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Grapher.cpp -o CMakeFiles/contacts_manager.dir/Grapher.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Grapher.cpp -o CMakeFiles/contacts_manager.dir/Grapher.cpp.s
 
 CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp
+CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.cpp
 CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o -MF CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o.d -o CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o -c /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o -MF CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o.d -o CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.cpp
 
 CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp > CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.cpp > CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.i
 
 CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/DotFileExecutor.cpp -o CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/DotFileExecutor.cpp -o CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.s
 
 CMakeFiles/contacts_manager.dir/Parser.cpp.o: CMakeFiles/contacts_manager.dir/flags.make
-CMakeFiles/contacts_manager.dir/Parser.cpp.o: /home/yennifer/Downloads/contacts-manager/Parser.cpp
+CMakeFiles/contacts_manager.dir/Parser.cpp.o: /home/yennifer/Documents/clion-projects/contacts-manager/Parser.cpp
 CMakeFiles/contacts_manager.dir/Parser.cpp.o: CMakeFiles/contacts_manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/contacts_manager.dir/Parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Parser.cpp.o -MF CMakeFiles/contacts_manager.dir/Parser.cpp.o.d -o CMakeFiles/contacts_manager.dir/Parser.cpp.o -c /home/yennifer/Downloads/contacts-manager/Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/contacts_manager.dir/Parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/contacts_manager.dir/Parser.cpp.o -MF CMakeFiles/contacts_manager.dir/Parser.cpp.o.d -o CMakeFiles/contacts_manager.dir/Parser.cpp.o -c /home/yennifer/Documents/clion-projects/contacts-manager/Parser.cpp
 
 CMakeFiles/contacts_manager.dir/Parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/contacts_manager.dir/Parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Downloads/contacts-manager/Parser.cpp > CMakeFiles/contacts_manager.dir/Parser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yennifer/Documents/clion-projects/contacts-manager/Parser.cpp > CMakeFiles/contacts_manager.dir/Parser.cpp.i
 
 CMakeFiles/contacts_manager.dir/Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/contacts_manager.dir/Parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Downloads/contacts-manager/Parser.cpp -o CMakeFiles/contacts_manager.dir/Parser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yennifer/Documents/clion-projects/contacts-manager/Parser.cpp -o CMakeFiles/contacts_manager.dir/Parser.cpp.s
 
 # Object files for target contacts_manager
 contacts_manager_OBJECTS = \
@@ -301,7 +301,7 @@ contacts_manager: CMakeFiles/contacts_manager.dir/DotFileExecutor.cpp.o
 contacts_manager: CMakeFiles/contacts_manager.dir/Parser.cpp.o
 contacts_manager: CMakeFiles/contacts_manager.dir/build.make
 contacts_manager: CMakeFiles/contacts_manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable contacts_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable contacts_manager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/contacts_manager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -313,6 +313,6 @@ CMakeFiles/contacts_manager.dir/clean:
 .PHONY : CMakeFiles/contacts_manager.dir/clean
 
 CMakeFiles/contacts_manager.dir/depend:
-	cd /home/yennifer/Downloads/contacts-manager/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yennifer/Downloads/contacts-manager /home/yennifer/Downloads/contacts-manager /home/yennifer/Downloads/contacts-manager/cmake-build-debug /home/yennifer/Downloads/contacts-manager/cmake-build-debug /home/yennifer/Downloads/contacts-manager/cmake-build-debug/CMakeFiles/contacts_manager.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yennifer/Documents/clion-projects/contacts-manager /home/yennifer/Documents/clion-projects/contacts-manager /home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug /home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug /home/yennifer/Documents/clion-projects/contacts-manager/cmake-build-debug/CMakeFiles/contacts_manager.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/contacts_manager.dir/depend
 

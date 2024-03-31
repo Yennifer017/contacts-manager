@@ -1,7 +1,7 @@
 CMakeFiles/contacts_manager.dir/Util.cpp.o: \
- /home/yennifer/Downloads/contacts-manager/Util.cpp \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Util.cpp \
  /usr/include/stdc-predef.h \
- /home/yennifer/Downloads/contacts-manager/Util.h \
+ /home/yennifer/Documents/clion-projects/contacts-manager/Util.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
