@@ -53,7 +53,6 @@ std::string Translator::translateAddGroupStm(LinkedList<Token> *&tokens, Node<To
     try {
         groups->insert(nameGroup, group);
     }catch (const std::invalid_argument& e) {
-        delete(group);
         throw std::invalid_argument("El grupo <" + *nameGroup + "> ya existe, no se pudo insertar");
     }
     std::string result = "Grupo <" + *nameGroup + "> agregado exitosamente";
@@ -100,7 +99,7 @@ void Translator::translateAddInstructions(LinkedList<Token>* &tokens, Node<Token
         case static_cast<int>(TypeTkn::NEW):
             try {
                 std::string result = translateAddGroupStm(tokens, currentNode);
-                reportero->addLogAction(result);
+                //reportero->addLogAction(result);
                 std::cout<<result<<std::endl;
             }catch (const std::invalid_argument& e) {
                 std::cout<<e.what()<<std::endl;
